@@ -1,0 +1,5 @@
+# Private source documents — never publish these (DOB, reg. no., ABC ID, stipend details)
+/*.jpeg
+/*.jpg
+/*.pdf
+node_modules/
