@@ -1,0 +1,947 @@
+<!doctype html>
+<html lang="en">
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Akshara Kumari — AI/ML & Full-Stack Engineer</title>
+  <meta name="description" content="Akshara Kumari — CSE (Big Data Analytics) at SRM IST, CGPA 9.94. I build LLM apps, computer-vision systems, forecasting pipelines and the Spring Boot / React backends that ship them.">
+  <meta name="theme-color" content="#FFF7EE">
+  <meta property="og:title" content="Akshara Kumari — AI/ML & Full-Stack Engineer">
+  <meta property="og:description" content="LLM apps, computer vision, forecasting pipelines and production backends. 3 internships · CGPA 9.94 · Best Intern at BrainMint.">
+  <meta property="og:image" content="assets/img/og.jpg">
+  <meta property="og:type" content="website">
+  <meta name="twitter:card" content="summary_large_image">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%236C47FF'/%3E%3Cstop offset='1' stop-color='%23FF5A36'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='18' fill='url(%23g)'/%3E%3Ctext x='32' y='42' font-family='Arial Black,Arial' font-weight='900' font-size='26' text-anchor='middle' fill='%23fff'%3EAK%3C/text%3E%3C/svg%3E">
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Instrument+Serif:ital@0;1&family=JetBrains+Mono:wght@400;500&family=Manrope:wght@400;500;600;700&family=Syne:wght@500;600;700;800&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="https://cdn.jsdelivr.net/gh/devicons/devicon@v2.16.0/devicon.min.css">
+  <link rel="stylesheet" href="assets/css/style.css">
+
+  <script>
+    // Set theme + js flag before first paint (no flash)
+    (function () {
+      var d = document.documentElement;
+      d.classList.add('js');
+      var saved = null;
+      try { saved = localStorage.getItem('ak-theme'); } catch (e) {}
+      var dark = saved ? saved === 'dark' : window.matchMedia('(prefers-color-scheme: dark)').matches;
+      d.setAttribute('data-theme', dark ? 'dark' : 'light');
+    })();
+  </script>
+</head>
+<body>
+
+<!-- ============ SVG ICON SPRITE ============ -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <symbol id="i-github" viewBox="0 0 24 24"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></symbol>
+  <symbol id="i-linkedin" viewBox="0 0 24 24"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45zM22.22 0H1.77C.79 0 0 .77 0 1.73v20.54C0 23.23.79 24 1.77 24h20.45c.98 0 1.78-.77 1.78-1.73V1.73C24 .77 23.2 0 22.22 0z"/></symbol>
+  <symbol id="i-leetcode" viewBox="0 0 24 24"><path fill="currentColor" d="M13.48 0a1.37 1.37 0 0 0-.96.44L7.12 6.22l-2.84 3.05a5.23 5.23 0 0 0-1.33 3.24 5.3 5.3 0 0 0 1.52 3.66l4.33 4.36c2.07 2.08 5.46 2.1 7.54.02l2.4-2.4a1.38 1.38 0 1 0-1.95-1.95l-2.4 2.4a2.56 2.56 0 0 1-3.62 0l-4.32-4.36a2.6 2.6 0 0 1-.08-3.68l2.6-2.8 5.47-5.87A1.38 1.38 0 0 0 13.48 0zm-2.87 12.87a1.38 1.38 0 1 0 0 2.76h9.64a1.38 1.38 0 1 0 0-2.76z"/></symbol>
+  <symbol id="i-instagram" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><rect x="2.5" y="2.5" width="19" height="19" rx="5.5"/><circle cx="12" cy="12" r="4.3"/></g><circle cx="17.6" cy="6.4" r="1.3" fill="currentColor"/></symbol>
+  <symbol id="i-mail" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="2.5" y="4.5" width="19" height="15" rx="3"/><path d="m3.5 6.5 8.5 6.5 8.5-6.5"/></g></symbol>
+  <symbol id="i-phone" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M5 3h4l2 5-2.5 1.5a11 11 0 0 0 6 6L16 13l5 2v4a2 2 0 0 1-2 2A16 16 0 0 1 3 5a2 2 0 0 1 2-2z"/></symbol>
+  <symbol id="i-arrow" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M7 17 17 7M8 7h9v9"/></symbol>
+  <symbol id="i-right" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M4 12h15m-6-6 6 6-6 6"/></symbol>
+  <symbol id="i-left" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M20 12H5m6-6-6 6 6 6"/></symbol>
+  <symbol id="i-download" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="M12 3v12m-5-5 5 5 5-5M4 20h16"/></symbol>
+  <symbol id="i-sun" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="12" cy="12" r="4.5"/><path d="M12 1.5v2.5M12 20v2.5M4.6 4.6l1.8 1.8M17.6 17.6l1.8 1.8M1.5 12H4M20 12h2.5M4.6 19.4l1.8-1.8M17.6 6.4l1.8-1.8"/></g></symbol>
+  <symbol id="i-moon" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M20.5 14.5A8.5 8.5 0 0 1 9.5 3.5a8.5 8.5 0 1 0 11 11z"/></symbol>
+  <symbol id="i-copy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><rect x="8" y="8" width="13" height="13" rx="3"/><path d="M16 8V5a2 2 0 0 0-2-2H5a2 2 0 0 0-2 2v9a2 2 0 0 0 2 2h3"/></g></symbol>
+  <symbol id="i-close" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M6 6l12 12M18 6 6 18"/></symbol>
+  <symbol id="i-search" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round"><circle cx="11" cy="11" r="7"/><path d="m20 20-3.5-3.5"/></g></symbol>
+  <symbol id="i-pin" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2"><path d="M12 22s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12z"/><circle cx="12" cy="10" r="2.5"/></g></symbol>
+  <symbol id="i-star" viewBox="0 0 24 24"><path fill="currentColor" d="m12 2 2.9 6.26 6.85.72-5.12 4.6 1.44 6.74L12 16.9l-6.07 3.42 1.44-6.74-5.12-4.6 6.85-.72z"/></symbol>
+  <symbol id="i-trophy" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" stroke-linecap="round"><path d="M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M7 6H3.5a3.5 3.5 0 0 0 4 4M17 6h3.5a3.5 3.5 0 0 1-4 4M12 14v4m-4 3h8"/></g></symbol>
+  <symbol id="i-medal" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M7 2h4l2 6M17 2h-4"/><circle cx="12" cy="15" r="6"/><path d="m12 12 .9 1.9 2 .3-1.5 1.4.4 2-1.8-1-1.8 1 .4-2-1.5-1.4 2-.3z" fill="currentColor" stroke="none"/></g></symbol>
+  <symbol id="i-gavel" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m14 5 5 5M9.5 9.5l5 5M12 3l9 9-3 3-9-9zM10.5 11.5 3 19l2 2 7.5-7.5M13 21h8"/></g></symbol>
+  <symbol id="i-cap" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M2 9 12 4l10 5-10 5z"/><path d="M6 11v5c3 2.5 9 2.5 12 0v-5M22 9v6"/></g></symbol>
+  <symbol id="i-book" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round"><path d="M4 4.5A2.5 2.5 0 0 1 6.5 2H20v17H6.5A2.5 2.5 0 0 0 4 21.5z"/><path d="M4 21.5A2.5 2.5 0 0 1 6.5 19H20v3H6.5"/></g></symbol>
+  <symbol id="i-users" viewBox="0 0 24 24"><g fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/></g></symbol>
+  <symbol id="i-heart" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2" stroke-linejoin="round" d="M12 20.5s-8.5-5.2-8.5-11.2A4.8 4.8 0 0 1 12 6.6a4.8 4.8 0 0 1 8.5 2.7c0 6-8.5 11.2-8.5 11.2z"/></symbol>
+  <symbol id="i-code" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" stroke-linejoin="round" d="m8 7-5 5 5 5M16 7l5 5-5 5M13.5 4l-3 16"/></symbol>
+  <symbol id="i-spark" viewBox="0 0 24 24"><path fill="currentColor" d="M12 1.5c.5 4.8 2.7 7 7.5 7.5v.1c-4.8.5-7 2.7-7.5 7.5h-.1c-.5-4.8-2.7-7-7.5-7.5V9c4.8-.5 7-2.7 7.5-7.5z" transform="translate(0 3)"/></symbol>
+  <symbol id="i-menu" viewBox="0 0 24 24"><path fill="none" stroke="currentColor" stroke-width="2.2" stroke-linecap="round" d="M4 8h16M4 16h10"/></symbol>
+</svg>
+
+<!-- ============ PRELOADER ============ -->
+<div class="preloader" aria-hidden="true">
+  <div class="preloader__inner">
+    <div class="preloader__name"><span>Akshara</span><em>Kumari</em></div>
+    <div class="preloader__count"><span data-count>0</span>%</div>
+  </div>
+  <div class="preloader__panel p1"></div>
+  <div class="preloader__panel p2"></div>
+  <div class="preloader__panel p3"></div>
+</div>
+
+<!-- ============ CURSOR ============ -->
+<div class="cursor" aria-hidden="true"><div class="cursor__dot"></div><div class="cursor__ring"><span class="cursor__label"></span></div></div>
+
+<div class="scroll-progress" aria-hidden="true"><span></span></div>
+
+<a class="skip" href="#main">Skip to content</a>
+
+<!-- ============ NAV ============ -->
+<header class="nav" data-nav>
+  <a href="#home" class="nav__logo" aria-label="Akshara Kumari — home">
+    <span class="logo-mark">AK</span><span class="logo-dot"></span>
+  </a>
+  <nav class="nav__links" aria-label="Primary">
+    <a href="#about" data-link>About</a>
+    <a href="#experience" data-link>Experience</a>
+    <a href="#work" data-link>Work</a>
+    <a href="#skills" data-link>Skills</a>
+    <a href="#awards" data-link>Awards</a>
+    <a href="#leadership" data-link>Leadership</a>
+    <span class="nav__pill" aria-hidden="true"></span>
+  </nav>
+  <div class="nav__actions">
+    <button class="icon-btn kbd-btn" data-palette-open aria-label="Open command menu (Ctrl+K)">
+      <svg><use href="#i-search"/></svg><kbd>Ctrl K</kbd>
+    </button>
+    <button class="icon-btn theme-btn" data-theme-toggle aria-label="Toggle dark mode">
+      <svg class="sun"><use href="#i-sun"/></svg><svg class="moon"><use href="#i-moon"/></svg>
+    </button>
+    <a href="#contact" class="btn btn--sm btn--ink magnetic nav__cta">Let's talk</a>
+    <button class="icon-btn menu-btn" data-menu-open aria-label="Open menu"><svg><use href="#i-menu"/></svg></button>
+  </div>
+</header>
+
+<!-- Mobile menu -->
+<div class="mmenu" data-mmenu aria-hidden="true">
+  <button class="icon-btn mmenu__close" data-menu-close aria-label="Close menu"><svg><use href="#i-close"/></svg></button>
+  <nav>
+    <a href="#about"><i>01</i>About</a>
+    <a href="#experience"><i>02</i>Experience</a>
+    <a href="#work"><i>03</i>Work</a>
+    <a href="#skills"><i>04</i>Skills</a>
+    <a href="#education"><i>05</i>Education</a>
+    <a href="#awards"><i>06</i>Awards</a>
+    <a href="#leadership"><i>07</i>Leadership</a>
+    <a href="#contact"><i>08</i>Contact</a>
+  </nav>
+  <div class="mmenu__foot">
+    <a href="mailto:aksharakumari1208@gmail.com">aksharakumari1208@gmail.com</a>
+  </div>
+</div>
+
+<main id="main">
+
+<!-- ============ HERO ============ -->
+<section class="hero" id="home">
+  <canvas class="hero__dots" aria-hidden="true"></canvas>
+  <div class="aurora" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+
+  <div class="container hero__grid">
+    <div class="hero__copy">
+      <p class="status-pill" data-hero-in>
+        <span class="pulse"></span> Open to AI/ML &amp; SDE opportunities
+        <span class="sep"></span>
+        <span class="loc"><svg><use href="#i-pin"/></svg> Chennai, IN</span>
+      </p>
+
+      <h1 class="hero__title" aria-label="Akshara Kumari">
+        <span class="line"><span class="split" data-split>Akshara</span></span>
+        <span class="line line--serif"><span class="split" data-split>Kumari</span><span class="hero__wave" aria-hidden="true">✦</span></span>
+      </h1>
+
+      <p class="hero__role" data-hero-in>
+        I build
+        <span class="rotator" aria-live="polite">
+          <span class="rotator__word is-active">LLM-powered products</span>
+          <span class="rotator__word">computer-vision systems</span>
+          <span class="rotator__word">Spring Boot backends</span>
+          <span class="rotator__word">forecasting pipelines</span>
+          <span class="rotator__word">agentic automations</span>
+        </span>
+      </p>
+
+      <p class="hero__lede" data-hero-in>
+        CSE (Big Data Analytics) at <strong>SRM IST</strong> with a <strong>9.94 CGPA</strong>,
+        three internships in, and a habit of turning messy ideas into software people actually use.
+      </p>
+
+      <div class="hero__ctas" data-hero-in>
+        <a href="#work" class="btn btn--primary magnetic" data-cursor="Explore">
+          See my work <svg><use href="#i-right"/></svg>
+        </a>
+        <div class="resume-drop">
+          <button class="btn btn--ghost magnetic" data-resume-toggle aria-expanded="false">
+            <svg><use href="#i-download"/></svg> Résumé
+          </button>
+          <div class="resume-drop__menu" role="menu">
+            <a role="menuitem" href="assets/docs/Akshara_Kumari_Resume_AIML.pdf" download><span class="dot dot--violet"></span>AI / ML résumé</a>
+            <a role="menuitem" href="assets/docs/Akshara_Kumari_Resume_FullStack.pdf" download><span class="dot dot--coral"></span>Full-Stack résumé</a>
+          </div>
+        </div>
+      </div>
+
+      <ul class="socials" data-hero-in>
+        <li><a href="https://github.com/aksharaagarwal21" target="_blank" rel="noopener" aria-label="GitHub" class="magnetic"><svg><use href="#i-github"/></svg></a></li>
+        <li><a href="https://www.linkedin.com/in/akshara-kumari-bb38b535b" target="_blank" rel="noopener" aria-label="LinkedIn" class="magnetic"><svg><use href="#i-linkedin"/></svg></a></li>
+        <li><a href="https://leetcode.com/u/Aksharakumari2024/" target="_blank" rel="noopener" aria-label="LeetCode" class="magnetic"><svg><use href="#i-leetcode"/></svg></a></li>
+        <li><a href="https://www.instagram.com/_akshara_agarwal__" target="_blank" rel="noopener" aria-label="Instagram" class="magnetic"><svg><use href="#i-instagram"/></svg></a></li>
+        <li><a href="mailto:aksharakumari1208@gmail.com" aria-label="Email" class="magnetic"><svg><use href="#i-mail"/></svg></a></li>
+      </ul>
+    </div>
+
+    <div class="hero__visual" data-parallax-root>
+      <div class="portrait" data-depth="0.25">
+        <div class="portrait__ring" aria-hidden="true"></div>
+        <div class="portrait__blob" aria-hidden="true"></div>
+        <img src="assets/img/portrait-cutout.png" alt="Portrait of Akshara Kumari" class="portrait__img" width="900" height="900" fetchpriority="high">
+      </div>
+
+      <div class="orbit" aria-hidden="true">
+        <span class="orbit__chip" style="--i:0"><i class="devicon-python-plain"></i>Python</span>
+        <span class="orbit__chip" style="--i:1"><i class="devicon-tensorflow-original"></i>TensorFlow</span>
+        <span class="orbit__chip" style="--i:2"><i class="devicon-spring-original"></i>Spring Boot</span>
+        <span class="orbit__chip" style="--i:3"><i class="devicon-react-original"></i>React</span>
+        <span class="orbit__chip" style="--i:4"><i class="devicon-docker-plain"></i>Docker</span>
+        <span class="orbit__chip" style="--i:5">🦜 LangChain</span>
+      </div>
+
+      <div class="float-card fc-1" data-depth="0.6">
+        <span class="fc__big">9.94</span><span class="fc__small">CGPA · SRM IST</span>
+      </div>
+      <div class="float-card fc-2" data-depth="0.9">
+        <span class="fc__icon"><svg><use href="#i-trophy"/></svg></span>
+        <span><b>Best Intern</b><br><small>BrainMint · A++</small></span>
+      </div>
+      <div class="float-card fc-3" data-depth="0.45">
+        <span class="fc__big">3</span><span class="fc__small">internships<br>shipped</span>
+      </div>
+    </div>
+  </div>
+
+  <a href="#about" class="scroll-cue" aria-label="Scroll to about">
+    <span class="scroll-cue__mouse"><span></span></span><span class="scroll-cue__txt">scroll</span>
+  </a>
+</section>
+
+<!-- ============ MARQUEE ============ -->
+<div class="marquee-wrap" aria-label="Tech stack">
+  <div class="marquee marquee--coral"><div class="marquee__track" data-marquee>
+    <span><i class="devicon-python-plain"></i>Python</span><b>✦</b>
+    <span><i class="devicon-java-plain"></i>Java</span><b>✦</b>
+    <span><i class="devicon-typescript-plain"></i>TypeScript</span><b>✦</b>
+    <span><i class="devicon-tensorflow-original"></i>TensorFlow</span><b>✦</b>
+    <span><i class="devicon-scikitlearn-plain"></i>scikit-learn</span><b>✦</b>
+    <span><i class="devicon-opencv-plain"></i>OpenCV</span><b>✦</b>
+    <span>LangChain</span><b>✦</b>
+    <span>MediaPipe</span><b>✦</b>
+    <span><i class="devicon-fastapi-plain"></i>FastAPI</span><b>✦</b>
+    <span>LLM APIs</span><b>✦</b>
+  </div></div>
+  <div class="marquee marquee--violet"><div class="marquee__track reverse" data-marquee>
+    <span><i class="devicon-spring-original"></i>Spring Boot</span><b>●</b>
+    <span><i class="devicon-react-original"></i>React</span><b>●</b>
+    <span><i class="devicon-nextjs-plain"></i>Next.js</span><b>●</b>
+    <span><i class="devicon-nodejs-plain"></i>Node.js</span><b>●</b>
+    <span><i class="devicon-apachekafka-original"></i>Kafka</span><b>●</b>
+    <span><i class="devicon-postgresql-plain"></i>PostgreSQL</span><b>●</b>
+    <span><i class="devicon-mongodb-plain"></i>MongoDB</span><b>●</b>
+    <span><i class="devicon-docker-plain"></i>Docker</span><b>●</b>
+    <span><i class="devicon-amazonwebservices-plain-wordmark"></i>AWS</span><b>●</b>
+    <span>n8n</span><b>●</b>
+    <span>Ollama</span><b>●</b>
+  </div></div>
+</div>
+
+<!-- ============ ABOUT ============ -->
+<section class="section about" id="about">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow"><i>01</i> About me</span>
+    </div>
+
+    <p class="about__statement" data-words>
+      I'm Akshara — a builder from Jharkhand who fell for computers somewhere between Simdega and Ranchi, and now studies Computer Science with Big Data Analytics in Chennai. I like the whole stack of a problem: the model that makes the call, the API that serves it, and the dashboard someone opens on Monday morning.
+    </p>
+
+    <div class="about__grid">
+      <div class="collage" data-reveal>
+        <figure class="polaroid pol-1" data-tilt>
+          <img src="assets/img/presenting.jpg" alt="Akshara presenting a project in the SRM computing lab" loading="lazy">
+          <figcaption>pitching in Computing Lab A</figcaption>
+        </figure>
+        <figure class="polaroid pol-2" data-tilt>
+          <img src="assets/img/bookstore.jpg" alt="Akshara in a bookstore surrounded by green shelves" loading="lazy">
+          <figcaption>off-duty: lost in a bookstore</figcaption>
+        </figure>
+        <figure class="polaroid pol-3" data-tilt>
+          <img src="assets/img/candid.jpg" alt="Candid photo of Akshara" loading="lazy">
+          <figcaption>always curious</figcaption>
+        </figure>
+        <span class="sticker sticker--sun">hi! 👋</span>
+      </div>
+
+      <div class="about__text">
+        <p data-reveal>
+          Over the last year I've shipped <strong>AI automations on locally-hosted LLMs</strong> at BrainMint (and walked away with the Best Intern certificate),
+          <strong>led a four-person team</strong> delivering client ML projects at Curious Wings, and cleaned and governed
+          <strong>15,000+ shipment records</strong> at Saila Shipping in Kolkata.
+        </p>
+        <p data-reveal>
+          On the side I build a lot — 40+ public repos spanning RAG chatbots, fraud-detection graphs, concurrent booking systems and IoT dashboards.
+          As Technical Director of the GeeksforGeeks club at SRM, I also get to help other people ship.
+        </p>
+        <div class="about__now" data-reveal>
+          <div><span class="tag tag--mint">Now</span> Going deeper into agentic AI, RAG and event-driven systems.</div>
+          <div><span class="tag tag--violet">Looking for</span> AI/ML engineering and software engineering roles &amp; internships.</div>
+        </div>
+
+        <div class="stats" data-reveal>
+          <div class="stat"><b data-counter="9.94" data-decimals="2">0</b><span>CGPA at SRM IST</span></div>
+          <div class="stat"><b><span data-counter="15000">0</span>+</b><span>records cleaned &amp; validated</span></div>
+          <div class="stat"><b><span data-counter="5">0</span>+</b><span>client projects delivered</span></div>
+          <div class="stat"><b><span data-counter="44" data-gh-repos>0</span></b><span>public GitHub repos</span></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EXPERIENCE ============ -->
+<section class="section experience" id="experience">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow"><i>02</i> Experience</span>
+      <h2 class="h2">Three internships,<br><em>three very different problems.</em></h2>
+    </div>
+
+    <div class="timeline" data-timeline>
+      <div class="timeline__rail" aria-hidden="true"><span class="timeline__fill"></span></div>
+
+      <!-- Saila -->
+      <article class="tl-item" data-reveal style="--accent: var(--mint)">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-meta">
+          <span class="tl-date">May – Jul 2026</span>
+          <span class="tl-place"><svg><use href="#i-pin"/></svg> Kolkata · on-site</span>
+        </div>
+        <div class="card tl-card spotlight">
+          <header>
+            <div>
+              <h3>Data Management Intern</h3>
+              <p class="tl-org">Saila Shipping &amp; Clearing Agency (P) Ltd.</p>
+            </div>
+            <span class="tl-badge">Logistics · Data</span>
+          </header>
+          <div class="kpis">
+            <div><b>15k+</b><span>shipment records</span></div>
+            <div><b>−30%</b><span>data errors</span></div>
+            <div><b>200+</b><span>discrepancies resolved</span></div>
+            <div><b>12</b><span>weekly reports</span></div>
+          </div>
+          <ul class="bullets">
+            <li>Ran validation, cleansing, verification and consistency checks across operational and shipment data using <b>Advanced Excel &amp; SQL</b> (Pivot Tables, XLOOKUP, JOINs, GROUP BY, aggregations).</li>
+            <li>Built weekly analytical reports and dashboards; coordinated with <b>4 cross-functional teams</b> to close documentation gaps.</li>
+            <li>Standardised <b>10+ documentation templates</b> and QC checklists for data governance, handling confidential operational data.</li>
+          </ul>
+          <div class="chips"><span>SQL</span><span>MS Excel</span><span>DBMS</span><span>Data Visualization</span><span>Data Governance</span></div>
+        </div>
+      </article>
+
+      <!-- Curious Wings -->
+      <article class="tl-item" data-reveal style="--accent: var(--coral)">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-meta">
+          <span class="tl-date">Feb – May 2026</span>
+          <span class="tl-place"><svg><use href="#i-pin"/></svg> Chennai · remote</span>
+        </div>
+        <div class="card tl-card spotlight">
+          <header>
+            <div>
+              <h3>AI/ML Intern · Team Lead</h3>
+              <p class="tl-org">Curious Wings Innovations (P) Ltd.</p>
+            </div>
+            <span class="tl-badge">Leadership · Client work</span>
+          </header>
+          <div class="kpis">
+            <div><b>4</b><span>interns led</span></div>
+            <div><b>5+</b><span>client projects</span></div>
+            <div><b>8</b><span>client meetings</span></div>
+            <div><b>100%</b><span>on-time delivery</span></div>
+          </div>
+          <ul class="bullets">
+            <li>Led a team of four interns to deliver client AI/ML products and websites — scoping requirements, picking stacks, and owning UI/UX through backend, API integration and deployment.</li>
+            <li>Split work across the team, ran troubleshooting and client hand-offs; commended in writing for an <b>ML/AI project with Arduino integration</b>.</li>
+          </ul>
+          <div class="chips"><span>Artificial Intelligence</span><span>Machine Learning</span><span>REST APIs</span><span>Frontend</span><span>Backend</span><span>Deployment</span></div>
+          <div class="certs">
+            <button class="cert" data-lightbox="assets/certs/curious-wings-internship.jpg" data-caption="Curious Wings — Certificate of Internship Completion (AI &amp; ML Team Lead, Feb–May 2026)" data-cursor="View">
+              <img src="assets/certs/curious-wings-internship.jpg" alt="" loading="lazy"><span>Completion certificate</span>
+            </button>
+            <button class="cert" data-lightbox="assets/certs/curious-wings-appreciation.jpg" data-caption="Curious Wings — Client Appreciation Letter (15 Dec 2025)" data-cursor="View">
+              <img src="assets/certs/curious-wings-appreciation.jpg" alt="" loading="lazy"><span>Client appreciation letter</span>
+            </button>
+          </div>
+        </div>
+      </article>
+
+      <!-- BrainMint -->
+      <article class="tl-item" data-reveal style="--accent: var(--violet)">
+        <div class="tl-dot" aria-hidden="true"></div>
+        <div class="tl-meta">
+          <span class="tl-date">Oct 2025 – Mar 2026</span>
+          <span class="tl-place"><svg><use href="#i-pin"/></svg> Chennai · remote</span>
+        </div>
+        <div class="card tl-card spotlight">
+          <header>
+            <div>
+              <h3>AI/ML Developer Intern</h3>
+              <p class="tl-org">BrainMint — AIML Tower</p>
+            </div>
+            <span class="tl-badge tl-badge--gold"><svg><use href="#i-star"/></svg> Best Intern · A++</span>
+          </header>
+          <div class="kpis">
+            <div><b>3</b><span>automation projects</span></div>
+            <div><b>20+</b><span>workflow steps automated</span></div>
+            <div><b>~10 h</b><span>saved per week</span></div>
+            <div><b>95%</b><span>success on 1,000+ requests</span></div>
+          </div>
+          <ul class="bullets">
+            <li>Stood up <b>Dockerised Ollama, PostgreSQL and n8n</b> and wired them together to run 3 open-source LLMs (7B–8B) locally for prompt/data routing, persistence and testing.</li>
+            <li>Built a <b>social-media automation pipeline</b>: pulls images &amp; captions from Google Drive, processes and merges them, and prepares scheduled posts for Instagram and LinkedIn.</li>
+            <li>Worked with scheduled triggers, conditions, file handling and API integration — earning <b>Best Performer of the Month</b>.</li>
+          </ul>
+          <div class="chips"><span>n8n</span><span>Ollama</span><span>Docker</span><span>PostgreSQL</span><span>REST APIs</span><span>DBMS</span></div>
+          <div class="certs">
+            <button class="cert" data-lightbox="assets/certs/brainmint-internship.jpg" data-caption="BrainMint — Internship completion as AI/ML Developer, Oct 2025 – Mar 2026, grade A++" data-cursor="View">
+              <img src="assets/certs/brainmint-internship.jpg" alt="" loading="lazy"><span>Completion · A++</span>
+            </button>
+            <button class="cert" data-lightbox="assets/certs/brainmint-best-performer.jpg" data-caption="BrainMint — Best Performer of the Month, Jr. Developer Intern, AIML Tower" data-cursor="View">
+              <img src="assets/certs/brainmint-best-performer.jpg" alt="" loading="lazy"><span>Best Performer award</span>
+            </button>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SELECTED WORK (horizontal) ============ -->
+<section class="work" id="work" data-hscroll>
+  <div class="work__sticky">
+    <div class="work__head container">
+      <span class="eyebrow"><i>03</i> Selected work</span>
+      <div class="work__ctrl">
+        <span class="work__count"><b data-hs-current>01</b> / <span data-hs-total>06</span></span>
+        <div class="work__bar"><span data-hs-bar></span></div>
+        <button class="work__btn magnetic" data-hs-prev aria-label="Previous project">PREV</button>
+        <button class="work__btn magnetic" data-hs-next aria-label="Next project">NEXT</button>
+      </div>
+    </div>
+
+    <div class="work__track" data-hs-track>
+
+      <!-- 1 AI Match Maker -->
+      <article class="panel" style="--p: var(--violet)">
+        <div class="panel__copy">
+          <span class="panel__no">01 — LLM · NLP</span>
+          <h3 class="panel__title">AI Match<br>Maker</h3>
+          <p class="panel__desc">Expert matchmaking across industries. Built for Foundathon 2026 with team TechTitans: it embeds expert profiles, ranks the best fits and translates jargon between domains so a doctor and a data engineer can actually brainstorm together.</p>
+          <ul class="panel__pts">
+            <li>FastAPI service embedding profiles with <b>all-MiniLM-L6-v2</b>, ranked by cosine similarity</li>
+            <li><b>Gemini + LangChain</b> for cross-domain jargon translation &amp; AI-facilitated sessions</li>
+            <li><b>4 AI endpoints</b> in a 3-part Next.js · Express · FastAPI app</li>
+          </ul>
+          <div class="chips"><span>FastAPI</span><span>Sentence Transformers</span><span>LangChain</span><span>Gemini</span><span>Next.js</span></div>
+          <div class="panel__links">
+            <a class="btn btn--sm btn--ink magnetic" href="https://github.com/aksharaagarwal21/ai-match-maker" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg> Code</a>
+          </div>
+        </div>
+        <div class="panel__visual">
+          <div class="window">
+            <div class="window__bar"><i></i><i></i><i></i><span>match-engine.py</span></div>
+            <svg class="viz-graph" viewBox="0 0 400 280" aria-hidden="true">
+              <g class="edges">
+                <line x1="200" y1="140" x2="70" y2="60"/><line x1="200" y1="140" x2="330" y2="55"/>
+                <line x1="200" y1="140" x2="60" y2="210"/><line x1="200" y1="140" x2="340" y2="215"/>
+                <line x1="200" y1="140" x2="200" y2="30"/><line x1="200" y1="140" x2="205" y2="250"/>
+                <line class="hot" x1="200" y1="140" x2="330" y2="55"/><line class="hot h2" x1="200" y1="140" x2="340" y2="215"/>
+              </g>
+              <g class="nodes">
+                <circle cx="70" cy="60" r="14"/><circle cx="330" cy="55" r="18" class="n-hot"/>
+                <circle cx="60" cy="210" r="12"/><circle cx="340" cy="215" r="16" class="n-hot2"/>
+                <circle cx="200" cy="30" r="10"/><circle cx="205" cy="250" r="11"/>
+                <circle cx="200" cy="140" r="26" class="n-core"/>
+              </g>
+              <text x="200" y="145" class="t-core">you</text>
+              <text x="330" y="92" class="t-lab">cos θ 0.91</text>
+              <text x="340" y="250" class="t-lab">cos θ 0.87</text>
+            </svg>
+          </div>
+        </div>
+      </article>
+
+      <!-- 2 SeatSync -->
+      <article class="panel" style="--p: var(--coral)">
+        <div class="panel__copy">
+          <span class="panel__no">02 — Full-Stack · Concurrency</span>
+          <h3 class="panel__title">Seat<br>Sync</h3>
+          <p class="panel__desc">A ticket-booking platform built to survive the "500 people click the same seat" moment. Optimistic and pessimistic locking keep every reservation transaction-safe.</p>
+          <ul class="panel__pts">
+            <li><b>12 REST APIs</b> with JWT, role-based access and OTP verification</li>
+            <li><b>35 unit, integration &amp; concurrency tests</b>; 3 Dockerised services with GitHub Actions CI</li>
+            <li>JMeter: 10,000 seats · 500 concurrent users · <b>zero double bookings</b></li>
+          </ul>
+          <div class="chips"><span>Spring Boot</span><span>React</span><span>PostgreSQL</span><span>Docker</span><span>JUnit</span><span>JMeter</span></div>
+          <div class="panel__links">
+            <a class="btn btn--sm btn--ink magnetic" href="https://github.com/aksharaagarwal21/SeatSync" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg> Code</a>
+          </div>
+        </div>
+        <div class="panel__visual">
+          <div class="window">
+            <div class="window__bar"><i></i><i></i><i></i><span>hall-A · live</span></div>
+            <div class="seatmap">
+              <div class="seatmap__stage">STAGE</div>
+              <div class="seatmap__grid" data-seats></div>
+              <div class="seatmap__legend"><span><i class="free"></i>free</span><span><i class="lock"></i>locked</span><span><i class="taken"></i>booked</span><span class="ok">0 double bookings ✓</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 3 Stockout -->
+      <article class="panel" style="--p: var(--mint)">
+        <div class="panel__copy">
+          <span class="panel__no">03 — ML Research · Forecasting</span>
+          <h3 class="panel__title">Stockout<br>Forecast</h3>
+          <p class="panel__desc">Retail sales hide demand: when a shelf is empty, sales read zero. This research pipeline recovers latent demand and turns calibrated forecasts into cheaper inventory orders.</p>
+          <ul class="panel__pts">
+            <li>Audited <b>4.5M training rows</b>; leakage-checked pipeline over <b>5,000 store-product series</b></li>
+            <li>3 simulated stockout mechanisms · <b>quantile LightGBM</b> + <b>conformal calibration</b></li>
+            <li>Cut simulated ordering cost by <b>12–21%</b> vs seasonal-naive across 9 settings</li>
+          </ul>
+          <div class="chips"><span>LightGBM</span><span>Conformal Prediction</span><span>pandas</span><span>Jupyter</span></div>
+          <div class="panel__links">
+            <a class="btn btn--sm btn--ink magnetic" href="https://github.com/aksharaagarwal21/stockout-aware-demand-forecasting" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg> Code</a>
+          </div>
+        </div>
+        <div class="panel__visual">
+          <div class="window">
+            <div class="window__bar"><i></i><i></i><i></i><span>forecast.ipynb</span></div>
+            <svg class="viz-chart" viewBox="0 0 400 260" aria-hidden="true">
+              <g class="grid"><line x1="30" y1="40" x2="390" y2="40"/><line x1="30" y1="100" x2="390" y2="100"/><line x1="30" y1="160" x2="390" y2="160"/><line x1="30" y1="220" x2="390" y2="220"/></g>
+              <rect x="170" y="30" width="46" height="195" class="stockout"/>
+              <text x="193" y="24" class="t-lab" text-anchor="middle">stockout</text>
+              <path class="band" d="M30 150 C 80 120, 110 170, 160 120 S 240 80, 280 110 S 350 70, 390 90 L 390 150 C 350 130, 320 170, 280 160 S 210 140, 160 170 S 80 200, 30 190 Z"/>
+              <path class="actual" d="M30 175 L60 150 L90 165 L120 140 L150 150 L170 222 L215 222 L240 125 L270 140 L300 115 L330 128 L360 100 L390 118"/>
+              <path class="pred" d="M30 170 C 80 145, 110 185, 160 145 S 240 110, 280 135 S 350 100, 390 120"/>
+            </svg>
+            <div class="viz-legend"><span class="l-a">observed sales</span><span class="l-p">latent demand</span><span class="l-b">conformal band</span></div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 4 Face Mask -->
+      <article class="panel" style="--p: var(--sun)">
+        <div class="panel__copy">
+          <span class="panel__no">04 — Deep Learning · Vision</span>
+          <h3 class="panel__title">Face Mask<br>Detection</h3>
+          <p class="panel__desc">Real-time mask-compliance monitoring from an image, a video or a live webcam, with face tracking, alerts and a Flask dashboard for whoever's on duty.</p>
+          <ul class="panel__pts">
+            <li><b>2-stage MobileNetV2</b> transfer learning: head training, then fine-tuning</li>
+            <li>3 classes — correct mask, no mask, <b>incorrect</b> mask</li>
+            <li>79.5% peak val. accuracy; confusion-matrix &amp; ROC evaluation scripts</li>
+          </ul>
+          <div class="chips"><span>TensorFlow/Keras</span><span>OpenCV</span><span>MobileNetV2</span><span>Flask</span></div>
+          <div class="panel__links">
+            <a class="btn btn--sm btn--ink magnetic" href="https://github.com/aksharaagarwal21/Face-mask-detection" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg> Code</a>
+          </div>
+        </div>
+        <div class="panel__visual">
+          <div class="window">
+            <div class="window__bar"><i></i><i></i><i></i><span>webcam · live</span></div>
+            <div class="scan">
+              <svg viewBox="0 0 200 200" class="scan__face" aria-hidden="true">
+                <circle cx="100" cy="90" r="52"/>
+                <circle cx="82" cy="80" r="5" class="eye"/><circle cx="118" cy="80" r="5" class="eye"/>
+                <path d="M62 100 Q100 92 138 100 L132 128 Q100 142 68 128 Z" class="mask"/>
+                <path d="M40 200 Q100 140 160 200" class="body"/>
+              </svg>
+              <div class="scan__box"><span class="scan__tag">with_mask</span></div>
+              <div class="scan__line"></div>
+              <div class="scan__hud"><span>REC ●</span><span>faces: 1</span></div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 5 EnterpriseFlow -->
+      <article class="panel" style="--p: var(--violet)">
+        <div class="panel__copy">
+          <span class="panel__no">05 — Microservices · Event-Driven</span>
+          <h3 class="panel__title">Enterprise<br>Flow</h3>
+          <p class="panel__desc">A mini ERP where Inventory, Finance and HR talk through Kafka events. When stock runs low, a purchase order shows up on the finance side in under 200 ms.</p>
+          <ul class="panel__pts">
+            <li><b>3 Spring Boot microservices</b> linked by <b>5 Kafka event types</b></li>
+            <li>3 PostgreSQL schemas (15 tables) · <b>25 REST endpoints</b> with Spring Security/JWT</li>
+            <li>2,000 products &amp; 500 orders seeded · <b>100% event delivery</b> in tests</li>
+          </ul>
+          <div class="chips"><span>Spring Boot</span><span>Kafka</span><span>Hibernate/JPA</span><span>PostgreSQL</span><span>JWT</span></div>
+        </div>
+        <div class="panel__visual">
+          <div class="window">
+            <div class="window__bar"><i></i><i></i><i></i><span>kafka · topics</span></div>
+            <div class="bus">
+              <div class="bus__svc s1">Inventory</div>
+              <div class="bus__svc s2">Finance</div>
+              <div class="bus__svc s3">HR</div>
+              <div class="bus__line"><span class="ev e1"></span><span class="ev e2"></span><span class="ev e3"></span><span class="ev e4"></span></div>
+              <div class="bus__label">stock.low → po.created · &lt; 200 ms</div>
+            </div>
+          </div>
+        </div>
+      </article>
+
+      <!-- 6 TrackBuddy -->
+      <article class="panel" style="--p: var(--coral)">
+        <div class="panel__copy">
+          <span class="panel__no">06 — Real-time · Distributed</span>
+          <h3 class="panel__title">Track<br>Buddy</h3>
+          <p class="panel__desc">Ride and delivery tracking with live trip updates. Booking, driver matching and location updates run as separate services on an event stream.</p>
+          <ul class="panel__pts">
+            <li>3 microservices on Spring Boot + Kafka handling <b>500+ events/sec</b> under load</li>
+            <li>WebSocket live updates at <b>&lt; 100 ms</b> average latency</li>
+            <li>200 drivers × 1,000 rides simulated · <b>98% matched in &lt; 5 s</b></li>
+          </ul>
+          <div class="chips"><span>Spring Boot</span><span>Kafka</span><span>WebSockets</span><span>PostgreSQL</span></div>
+        </div>
+        <div class="panel__visual">
+          <div class="window">
+            <div class="window__bar"><i></i><i></i><i></i><span>trip #4821 · live</span></div>
+            <svg class="viz-map" viewBox="0 0 400 260" aria-hidden="true">
+              <g class="blocks">
+                <rect x="20" y="20" width="90" height="60" rx="8"/><rect x="130" y="20" width="120" height="60" rx="8"/><rect x="270" y="20" width="110" height="60" rx="8"/>
+                <rect x="20" y="100" width="60" height="70" rx="8"/><rect x="100" y="100" width="150" height="70" rx="8"/><rect x="270" y="100" width="110" height="70" rx="8"/>
+                <rect x="20" y="190" width="130" height="50" rx="8"/><rect x="170" y="190" width="80" height="50" rx="8"/><rect x="270" y="190" width="110" height="50" rx="8"/>
+              </g>
+              <path id="route" class="route" d="M40 180 H 90 V 90 H 260 V 180 H 330"/>
+              <circle class="car" r="8"><animateMotion dur="5s" repeatCount="indefinite" rotate="auto"><mpath href="#route"/></animateMotion></circle>
+              <circle cx="40" cy="180" r="6" class="pin-a"/><circle cx="330" cy="180" r="7" class="pin-b"/>
+            </svg>
+            <div class="viz-legend"><span class="l-p">ws latency &lt; 100 ms</span><span class="l-a">driver matched ✓</span></div>
+          </div>
+        </div>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ MORE PROJECTS ============ -->
+<section class="section more" id="projects">
+  <div class="container">
+    <div class="section-head section-head--row" data-reveal>
+      <div>
+        <span class="eyebrow"><i>03.5</i> The workshop</span>
+        <h2 class="h2">More things <em>I've built.</em></h2>
+      </div>
+      <div class="filters" role="tablist" aria-label="Filter projects">
+        <button class="filter is-active" data-filter="all" role="tab" aria-selected="true">All</button>
+        <button class="filter" data-filter="ai" role="tab" aria-selected="false">AI / ML</button>
+        <button class="filter" data-filter="web" role="tab" aria-selected="false">Full-Stack</button>
+        <button class="filter" data-filter="iot" role="tab" aria-selected="false">IoT &amp; Systems</button>
+        <button class="filter" data-filter="live" role="tab" aria-selected="false">● Live demos</button>
+      </div>
+    </div>
+    <div class="pgrid" data-projects></div>
+    <div class="more__foot">
+      <button class="btn btn--ghost magnetic" data-more>Show all projects</button>
+      <a class="link-arrow" href="https://github.com/aksharaagarwal21?tab=repositories" target="_blank" rel="noopener">Every repo on GitHub <svg><use href="#i-arrow"/></svg></a>
+    </div>
+  </div>
+</section>
+
+<!-- ============ SKILLS ============ -->
+<section class="section skills" id="skills">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow"><i>04</i> Toolbox</span>
+      <h2 class="h2">What I reach for<br><em>when I'm building.</em></h2>
+    </div>
+
+    <div class="bento">
+      <div class="bento__card b-ai spotlight" data-reveal>
+        <div class="bento__icon" style="--c: var(--violet)"><svg><use href="#i-spark"/></svg></div>
+        <h3>AI &amp; Machine Learning</h3>
+        <p>From classic ML to LLM apps: training, fine-tuning, embeddings, RAG and agentic workflows.</p>
+        <div class="chips chips--lg">
+          <span>scikit-learn</span><span>TensorFlow / Keras</span><span>OpenCV</span><span>MediaPipe</span><span>Sentence Transformers</span><span>LangChain</span><span>LLM APIs</span><span>RAG</span><span>LightGBM</span><span>Ollama</span><span>n8n</span>
+        </div>
+      </div>
+      <div class="bento__card b-back spotlight" data-reveal>
+        <div class="bento__icon" style="--c: var(--coral)"><svg><use href="#i-code"/></svg></div>
+        <h3>Backend &amp; Architecture</h3>
+        <p>Services that stay correct under load.</p>
+        <div class="chips chips--lg">
+          <span>Spring Boot</span><span>Spring Security</span><span>Hibernate/JPA</span><span>FastAPI</span><span>Flask</span><span>Node.js / Express</span><span>REST</span><span>Kafka</span><span>WebSockets</span><span>Microservices</span>
+        </div>
+      </div>
+      <div class="bento__card b-lang spotlight" data-reveal>
+        <h3>Languages</h3>
+        <ul class="lang-list">
+          <li><i class="devicon-python-plain colored"></i>Python</li>
+          <li><i class="devicon-java-plain colored"></i>Java</li>
+          <li><i class="devicon-typescript-plain colored"></i>TypeScript</li>
+          <li><i class="devicon-javascript-plain colored"></i>JavaScript</li>
+          <li><i class="devicon-azuresqldatabase-plain colored"></i>SQL</li>
+          <li><i class="devicon-cplusplus-plain colored"></i>C++</li>
+        </ul>
+      </div>
+      <div class="bento__card b-front spotlight" data-reveal>
+        <div class="bento__icon" style="--c: var(--mint)"><svg><use href="#i-spark"/></svg></div>
+        <h3>Frontend</h3>
+        <div class="chips chips--lg"><span>React</span><span>Next.js</span><span>Angular</span><span>Tailwind CSS</span><span>Framer Motion</span></div>
+      </div>
+      <div class="bento__card b-data spotlight" data-reveal>
+        <div class="bento__icon" style="--c: var(--sun)"><svg><use href="#i-book"/></svg></div>
+        <h3>Data &amp; DevOps</h3>
+        <div class="chips chips--lg"><span>PostgreSQL</span><span>MySQL</span><span>MongoDB</span><span>Supabase pgvector</span><span>Docker</span><span>AWS</span><span>GitHub Actions</span><span>Maven</span><span>JUnit / Mockito</span></div>
+      </div>
+      <div class="bento__card b-lc spotlight" data-reveal>
+        <h3>Problem solving</h3>
+        <p class="lc-sub">LeetCode · mostly C++, weighted toward the hard end</p>
+        <div class="lc">
+          <div class="lc__bar"><span style="--w:5.6%; --c: var(--mint)"></span><span style="--w:61.1%; --c: var(--sun)"></span><span style="--w:33.3%; --c: var(--coral)"></span></div>
+          <div class="lc__legend"><span><i style="--c:var(--mint)"></i>Easy 2</span><span><i style="--c:var(--sun)"></i>Medium 22</span><span><i style="--c:var(--coral)"></i>Hard 12</span></div>
+        </div>
+        <a class="link-arrow" href="https://leetcode.com/u/Aksharakumari2024/" target="_blank" rel="noopener">LeetCode profile <svg><use href="#i-arrow"/></svg></a>
+      </div>
+      <div class="bento__card b-core spotlight" data-reveal>
+        <h3>CS core</h3>
+        <div class="chips chips--lg"><span>DSA</span><span>OOP</span><span>DBMS</span><span>Multithreading</span><span>Concurrency Control</span><span>Query Optimization</span><span>Design &amp; Analysis of Algorithms</span></div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ EDUCATION ============ -->
+<section class="section education" id="education">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow"><i>05</i> Education</span>
+      <h2 class="h2">Top of the class,<br><em>and the receipts to prove it.</em></h2>
+    </div>
+    <div class="edu">
+      <div class="edu__main card spotlight" data-reveal>
+        <div class="ring" data-ring="9.94" data-max="10">
+          <svg viewBox="0 0 120 120"><defs><linearGradient id="rg" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--violet)"/><stop offset="1" stop-color="var(--coral)"/></linearGradient></defs><circle cx="60" cy="60" r="52" class="ring__bg"/><circle cx="60" cy="60" r="52" class="ring__fg"/></svg>
+          <div class="ring__txt"><b data-counter="9.94" data-decimals="2">0</b><span>CGPA</span></div>
+        </div>
+        <div>
+          <span class="tag tag--violet">2024 — 2028</span>
+          <h3>SRM Institute of Science and Technology</h3>
+          <p class="muted">B.Tech, Computer Science &amp; Engineering — specialisation in Big Data Analytics · Kattankulathur, Chennai</p>
+          <p>Straight <b>O grades</b> in the latest semester: Design &amp; Analysis of Algorithms, DBMS, Artificial Intelligence, IoT, Probability &amp; Statistics and more.</p>
+          <div class="scholar">
+            <span class="scholar__icon"><svg><use href="#i-medal"/></svg></span>
+            <div><b>Performance-Based Scholarship · ₹76,875</b><small>Awarded by SRM IST for academic year 2024–25</small></div>
+          </div>
+        </div>
+      </div>
+      <div class="edu__side">
+        <div class="card edu__mini spotlight" data-reveal>
+          <span class="edu__pct"><b data-counter="90" data-decimals="1">0</b>%</span>
+          <div><h4>Delhi Public School, Ranchi</h4><p class="muted">Class XII · Science · 2022–24</p></div>
+        </div>
+        <div class="card edu__mini spotlight" data-reveal>
+          <span class="edu__pct"><b data-counter="92.8" data-decimals="1">0</b>%</span>
+          <div><h4>DAV Public School, Simdega</h4><p class="muted">Class X · 2020–22</p></div>
+        </div>
+        <div class="card edu__mini spotlight" data-reveal>
+          <span class="edu__pct edu__pct--icon"><svg><use href="#i-cap"/></svg></span>
+          <div><h4>NPTEL certifications</h4><p class="muted">Database Management Systems · Advanced Object-Oriented Programming</p></div>
+        </div>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ AWARDS ============ -->
+<section class="section awards" id="awards">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow"><i>06</i> Recognition</span>
+      <h2 class="h2">Wins, finals<br><em>&amp; a judge's seat.</em></h2>
+    </div>
+    <div class="awards__grid">
+      <article class="award card spotlight" data-reveal style="--c: var(--sun)">
+        <span class="award__icon"><svg><use href="#i-trophy"/></svg></span>
+        <h3>Best Intern — BrainMint</h3>
+        <p>Best Performer of the Month as a Jr. Developer Intern in the AIML Tower, plus an A++ completion grade.</p>
+      </article>
+      <article class="award card spotlight" data-reveal style="--c: var(--coral)">
+        <span class="award__icon"><svg><use href="#i-star"/></svg></span>
+        <h3>Client Appreciation</h3>
+        <p>Named in a letter from Curious Wings for an ML/AI project with Arduino integration, after 5+ client projects were deployed and sold.</p>
+      </article>
+      <article class="award card spotlight" data-reveal style="--c: var(--violet)">
+        <span class="award__icon"><svg><use href="#i-medal"/></svg></span>
+        <h3>Top 5 Finalist</h3>
+        <p>Tech Mesh Futurix Hackathon.</p>
+      </article>
+      <article class="award card spotlight" data-reveal style="--c: var(--mint)">
+        <span class="award__icon"><svg><use href="#i-medal"/></svg></span>
+        <h3>National Finalist · Top 7</h3>
+        <p>HACKCELER8 National-Level Hackathon (team TechTitans).</p>
+      </article>
+      <article class="award card spotlight" data-reveal style="--c: var(--coral)">
+        <span class="award__icon"><svg><use href="#i-spark"/></svg></span>
+        <h3>Top 100 Teams</h3>
+        <p>Shortlisted at the Schneider Electric HMI Innovation Marathon.</p>
+      </article>
+      <article class="award card spotlight" data-reveal style="--c: var(--violet)">
+        <span class="award__icon"><svg><use href="#i-gavel"/></svg></span>
+        <h3>Hackathon Judge</h3>
+        <p>Judged HACKIT at SRMIST for AI-Enabled Application Development &amp; Backend Integration.</p>
+      </article>
+    </div>
+  </div>
+</section>
+
+<!-- ============ LEADERSHIP ============ -->
+<section class="section leadership" id="leadership">
+  <div class="container">
+    <div class="section-head" data-reveal>
+      <span class="eyebrow"><i>07</i> Leadership &amp; community</span>
+      <h2 class="h2">Helping other people<br><em>ship, too.</em></h2>
+    </div>
+
+    <div class="lead">
+      <figure class="lead__photo" data-reveal>
+        <div class="lead__img" data-speed="0.08"><img src="assets/img/tech-talk.jpg" alt="Akshara walking an audience through a tech-stack slide" loading="lazy"></div>
+        <figcaption>Walking a room through an AI health-tech stack at SRM.</figcaption>
+      </figure>
+
+      <div class="lead__list">
+        <article class="lead__item" data-reveal>
+          <span class="lead__ic" style="--c: var(--mint)"><svg><use href="#i-code"/></svg></span>
+          <div>
+            <div class="lead__top"><h3>Technical Director</h3><span>2025 — now</span></div>
+            <p class="lead__org">GeeksforGeeks Technical Club, SRMIST</p>
+            <p>I run the technical domain: assigning work, reviews, testing and releases for the club website, recruitment workflows, event registration and ticketing, and internal tracking tools. I also help organise hackathons, workshops and ideathons, and built the site for <a href="https://event2-frontend.vercel.app" target="_blank" rel="noopener">IGNISIA 2025</a>.</p>
+          </div>
+        </article>
+        <article class="lead__item" data-reveal>
+          <span class="lead__ic" style="--c: var(--violet)"><svg><use href="#i-users"/></svg></span>
+          <div>
+            <div class="lead__top"><h3>Corporate Member</h3><span>Sep 2025 — now</span></div>
+            <p class="lead__org">PLACFV · SRM Students Placement Team</p>
+            <p>I coordinate campus placement drives for 100+ students: scheduling interviews, managing candidate flow and on-ground logistics. At the Internship Fair, where around 50 companies came to hire, I interviewed for one of them and was selected.</p>
+          </div>
+        </article>
+        <article class="lead__item" data-reveal>
+          <span class="lead__ic" style="--c: var(--coral)"><svg><use href="#i-heart"/></svg></span>
+          <div>
+            <div class="lead__top"><h3>Volunteer · Internship Fair</h3><span>Mar 2026</span></div>
+            <p class="lead__org">Qeagle hiring desk · PLACFV</p>
+            <p>I handled coordination for Qeagle's hiring: candidate management, the interview and test process, and guiding students. I sat in on interviews and saw the whole selection process from the recruiter's side.</p>
+          </div>
+        </article>
+        <article class="lead__item" data-reveal>
+          <span class="lead__ic" style="--c: var(--sun)"><svg><use href="#i-heart"/></svg></span>
+          <div>
+            <div class="lead__top"><h3>Volunteer · Fresher Enrolment</h3><span>Jul — Aug 2025</span></div>
+            <p class="lead__org">AARUUSH CSI · SRMIST</p>
+            <p>I helped with enrolment and registration for the 2025–29 batch, organised events and promoted programmes with student outreach.</p>
+          </div>
+        </article>
+      </div>
+    </div>
+  </div>
+</section>
+
+<!-- ============ CONTACT ============ -->
+<section class="section contact" id="contact">
+  <div class="aurora aurora--contact" aria-hidden="true"><span class="a1"></span><span class="a2"></span><span class="a3"></span></div>
+  <div class="container">
+    <span class="eyebrow" data-reveal><i>08</i> Contact</span>
+    <h2 class="contact__title" data-reveal>
+      Let's build<br><em>something good.</em>
+    </h2>
+
+    <div class="contact__grid">
+      <div class="contact__info" data-reveal>
+        <p class="contact__lede">Hiring for an AI/ML or software role, planning a hackathon, or have an idea that needs a builder? My inbox is open.</p>
+
+        <button class="email-pill magnetic" data-copy="aksharakumari1208@gmail.com" data-cursor="Copy">
+          <svg><use href="#i-mail"/></svg>
+          <span>aksharakumari1208@gmail.com</span>
+          <span class="email-pill__copy"><svg><use href="#i-copy"/></svg></span>
+        </button>
+
+        <ul class="contact__links">
+          <li><a href="tel:+918434561527"><svg><use href="#i-phone"/></svg><span>+91 84345 61527</span><svg class="arr"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://www.linkedin.com/in/akshara-kumari-bb38b535b" target="_blank" rel="noopener"><svg><use href="#i-linkedin"/></svg><span>LinkedIn</span><svg class="arr"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://github.com/aksharaagarwal21" target="_blank" rel="noopener"><svg><use href="#i-github"/></svg><span>GitHub</span><svg class="arr"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://leetcode.com/u/Aksharakumari2024/" target="_blank" rel="noopener"><svg><use href="#i-leetcode"/></svg><span>LeetCode</span><svg class="arr"><use href="#i-arrow"/></svg></a></li>
+          <li><a href="https://www.instagram.com/_akshara_agarwal__" target="_blank" rel="noopener"><svg><use href="#i-instagram"/></svg><span>Instagram</span><svg class="arr"><use href="#i-arrow"/></svg></a></li>
+        </ul>
+      </div>
+
+      <form class="contact__form card" data-reveal data-contact-form>
+        <div class="field">
+          <input id="f-name" name="name" required placeholder=" " autocomplete="name">
+          <label for="f-name">Your name</label>
+        </div>
+        <div class="field">
+          <input id="f-email" name="email" type="email" required placeholder=" " autocomplete="email">
+          <label for="f-email">Your email</label>
+        </div>
+        <div class="field-chips" role="group" aria-label="Reason">
+          <label><input type="radio" name="topic" value="Job opportunity" checked><span>Job / internship</span></label>
+          <label><input type="radio" name="topic" value="Project collaboration"><span>Collaboration</span></label>
+          <label><input type="radio" name="topic" value="Hackathon / event"><span>Hackathon / event</span></label>
+          <label><input type="radio" name="topic" value="Just saying hi"><span>Just hi</span></label>
+        </div>
+        <div class="field">
+          <textarea id="f-msg" name="message" rows="4" required placeholder=" "></textarea>
+          <label for="f-msg">What's on your mind?</label>
+        </div>
+        <button class="btn btn--primary btn--block magnetic" type="submit">Send message <svg><use href="#i-right"/></svg></button>
+        <p class="form-note">Opens your email app with everything pre-filled.</p>
+      </form>
+    </div>
+  </div>
+</section>
+
+</main>
+
+<footer class="footer">
+  <div class="container footer__inner">
+    <div class="footer__big" aria-hidden="true"><div class="footer__big-track"><span>AKSHARA</span><i>✦</i><span>KUMARI</span><i>✦</i><span>AKSHARA</span><i>✦</i><span>KUMARI</span><i>✦</i></div></div>
+    <div class="footer__row">
+      <p>© <span data-year></span> Akshara Kumari. Designed &amp; built from scratch.</p>
+      <p class="footer__clock"><span class="pulse"></span> Chennai · <span data-clock>--:--</span> IST</p>
+      <a href="#home" class="to-top magnetic" aria-label="Back to top">
+        <svg class="to-top__ring" viewBox="0 0 48 48"><circle cx="24" cy="24" r="21"/></svg>
+        <svg class="to-top__arrow"><use href="#i-arrow"/></svg>
+      </a>
+    </div>
+  </div>
+</footer>
+
+<!-- Lightbox -->
+<div class="lightbox" data-lightbox-root aria-hidden="true" role="dialog" aria-modal="true" aria-label="Certificate preview">
+  <button class="icon-btn lightbox__close" data-lightbox-close aria-label="Close"><svg><use href="#i-close"/></svg></button>
+  <figure><img alt=""><figcaption></figcaption></figure>
+</div>
+
+<!-- Command palette -->
+<div class="palette" data-palette aria-hidden="true" role="dialog" aria-modal="true" aria-label="Command menu">
+  <div class="palette__box">
+    <div class="palette__search"><svg><use href="#i-search"/></svg><input type="text" placeholder="Jump to a section, copy email, download résumé…" aria-label="Search commands" data-palette-input><kbd>esc</kbd></div>
+    <ul class="palette__list" data-palette-list role="listbox"></ul>
+  </div>
+</div>
+
+<div class="toast" role="status" aria-live="polite" data-toast></div>
+
+<script src="https://unpkg.com/lenis@1.1.13/dist/lenis.min.js" defer></script>
+<script src="assets/js/main.js" defer></script>
+</body>
+</html>
