@@ -428,6 +428,7 @@ ul, ol { list-style: none; }
   .feat { grid-template-columns: 1fr; padding-top: 8vh; }
   .feat__type { position: relative; top: 0; }
   .feat__title { font-size: 22vw; }
+  .feat__title--long { font-size: 17vw; }
   .feat__layers { height: auto; display: grid; gap: 14px; margin-top: 30px; }
   .layer { position: relative; left: auto !important; right: auto !important; top: auto !important; width: 100% !important; transform: none !important; }
   .layer--mob { width: 55% !important; justify-self: end; margin-top: -30%; }

@@ -195,9 +195,45 @@
 <!-- ================= FEATURED ================= -->
 <section class="featured" data-section="work">
 
+  <article class="feat" id="f-posture">
+    <div class="feat__type">
+      <p class="mono dim">CASE 01 · COMPUTER VISION × WEB · 2026</p>
+      <h3 class="feat__title feat__title--long">POSTURE<br>VISION</h3>
+      <p class="feat__lede">An AI workout coach that runs in the browser: it <em>counts reps, checks your form and talks you through every set,</em> and the video never leaves your device.</p>
+      <dl class="feat__stats">
+        <div><dt>exercises · categories</dt><dd>16 · 5</dd></div>
+        <div><dt>synthetic front-view sets counted exactly</dt><dd>0% → 100%</dd></div>
+        <div><dt>automated tests</dt><dd>150+</dd></div>
+      </dl>
+      <p class="mono feat__stack">REACT · MEDIAPIPE POSE · WEB SPEECH API · K-NN · VITEST · GITHUB ACTIONS · PWA</p>
+      <div class="feat__links">
+        <a class="u-link acid-link" href="https://aksharaagarwal21.github.io/PostureVision/" target="_blank" rel="noopener" data-cursor="open">LIVE DEMO ↗</a>
+        <a class="u-link" href="https://github.com/aksharaagarwal21/PostureVision" target="_blank" rel="noopener" data-cursor="code">SOURCE ↗</a>
+      </div>
+    </div>
+    <div class="feat__layers" data-layers>
+      <figure class="layer layer--desk" data-speed="-10" data-cursor="drag"><img src="assets/w/posture-d.webp" alt="PostureVision workout builder with templates, warm-up and calorie estimate" loading="lazy"></figure>
+      <figure class="layer layer--side" data-speed="-26" data-cursor="drag"><img src="assets/w/posture-marks.webp" alt="Red marks on the hips and a warning when the hips sag during a plank" loading="lazy"></figure>
+      <figure class="layer layer--mob" data-speed="-44" data-cursor="drag"><img src="assets/w/posture-m.webp" alt="PostureVision exercise guide with an animated figure on a phone" loading="lazy"></figure>
+      <div class="layer layer--arch" data-speed="-18" data-cursor="drag">
+        <p class="mono dim">PIPELINE</p>
+        <div class="arch">
+          <span>webcam</span><i>→</i><span class="acid-b">MediaPipe Pose (3D)</span><i>→</i><span>One Euro filter</span><i>→</i><span>reps + form rules</span>
+        </div>
+        <div class="arch arch--sub"><span>red marks on the joint</span><span>voice coach</span><span>trainable k-NN per exercise</span></div>
+      </div>
+      <pre class="layer layer--term mono" data-speed="-34" data-cursor="drag"><b>$</b> git log --oneline -5
+<span class="acid">•</span> Make the app installable with a web app manifest
+<span class="acid">•</span> Deploy to GitHub Pages with GitHub Actions
+<span class="acid">•</span> Add warm-up section to workout plans and templates
+<span class="acid">•</span> Measure hip bend per leg and sideways torso lean
+<span class="acid">•</span> Announce the start and end of the warm-up</pre>
+    </div>
+  </article>
+
   <article class="feat" id="f-seatsync">
     <div class="feat__type">
-      <p class="mono dim">CASE 01 · FULL STACK · 2026</p>
+      <p class="mono dim">CASE 02 · FULL STACK · 2026</p>
       <h3 class="feat__title">SEAT<br>SYNC</h3>
       <p class="feat__lede">An event-booking platform built around one guarantee: <em>two people can never book the same seat.</em></p>
       <dl class="feat__stats">
@@ -231,7 +267,7 @@
 
   <article class="feat" id="f-paclab">
     <div class="feat__type">
-      <p class="mono dim">CASE 02 · AI / ML × FULL STACK · 2026</p>
+      <p class="mono dim">CASE 03 · AI / ML × FULL STACK · 2026</p>
       <h3 class="feat__title">PAC<br>LAB</h3>
       <p class="feat__lede">A virtual ML lab that teaches ten core algorithms through <em>interactive simulations, quizzes and a Pac-Man-style maze.</em></p>
       <dl class="feat__stats">
@@ -264,7 +300,7 @@
 
   <article class="feat" id="f-bloodwing">
     <div class="feat__type">
-      <p class="mono dim">CASE 03 · GEN AI × FULL STACK · 2026</p>
+      <p class="mono dim">CASE 04 · GEN AI × FULL STACK · 2026</p>
       <h3 class="feat__title">BLOOD<br>WING</h3>
       <p class="feat__lede">A mental-health platform with role-based dashboards and an AI companion using <em>retrieval-augmented Llama 3, crisis detection and moderation.</em></p>
       <dl class="feat__stats">
