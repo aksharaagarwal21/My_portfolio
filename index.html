@@ -231,9 +231,39 @@
     </div>
   </article>
 
+  <article class="feat" id="f-facemask">
+    <div class="feat__type">
+      <p class="mono dim">CASE 02 · COMPUTER VISION × AI / ML · 2026</p>
+      <h3 class="feat__title">FACE<br>MASK</h3>
+      <p class="feat__lede">Real-time face mask detection that sorts every face into <em>with mask, no mask or worn incorrectly,</em> from a webcam, a video or a phone pointed at a crowd.</p>
+      <dl class="feat__stats">
+        <div><dt>held-out test accuracy · 582 faces</dt><dd>98.97%</dd></div>
+        <div><dt>calibration error after temperature scaling</dt><dd>0.067 → 0.010</dd></div>
+        <div><dt>distant faces found in far range</dt><dd>73% → 89%</dd></div>
+      </dl>
+      <p class="mono feat__stack">PYTHON · TENSORFLOW · EFFICIENTNETV2 · OPENCV YUNET · FLASK · TFLITE · DOCKER · GITHUB ACTIONS</p>
+      <div class="feat__links"><a class="u-link acid-link" href="https://github.com/aksharaagarwal21/Face-mask-detection" target="_blank" rel="noopener" data-cursor="code">SOURCE &amp; DOCS ↗</a></div>
+    </div>
+    <div class="feat__layers" data-layers>
+      <figure class="layer layer--desk" data-speed="-10" data-cursor="drag"><img src="assets/w/facemask-d.webp" alt="Field mode on a phone flagging no mask, with mask and incorrectly worn mask" loading="lazy"></figure>
+      <figure class="layer layer--mob" data-speed="-42" data-cursor="drag"><img src="assets/w/facemask-m.webp" alt="Field mode flagging a face with no mask at 92% and listing it under possible violations" loading="lazy"></figure>
+      <div class="layer layer--arch" data-speed="-22" data-cursor="drag">
+        <p class="mono dim">PIPELINE</p>
+        <div class="arch">
+          <span>camera</span><i>→</i><span>YuNet faces</span><i>→</i><span class="acid-b">EfficientNetV2-B0</span><i>→</i><span>track + smooth</span>
+        </div>
+        <div class="arch arch--sub"><span>calibrated confidences</span><span>Grad-CAM</span><span>phone field mode</span></div>
+      </div>
+      <pre class="layer layer--term mono" data-speed="-32" data-cursor="drag"><b>$</b> curl -F image=@crowd.jpg localhost:5000/api/predict
+<span class="dim">"counts": { "total": 23, "with_mask": 20,</span>
+<span class="dim">  "without_mask": 2, "mask_weared_incorrect": 1 },</span>
+<span class="acid">"compliance_pct": 87.0</span></pre>
+    </div>
+  </article>
+
   <article class="feat" id="f-seatsync">
     <div class="feat__type">
-      <p class="mono dim">CASE 02 · FULL STACK · 2026</p>
+      <p class="mono dim">CASE 03 · FULL STACK · 2026</p>
       <h3 class="feat__title">SEAT<br>SYNC</h3>
       <p class="feat__lede">An event-booking platform built around one guarantee: <em>two people can never book the same seat.</em></p>
       <dl class="feat__stats">
@@ -267,7 +297,7 @@
 
   <article class="feat" id="f-paclab">
     <div class="feat__type">
-      <p class="mono dim">CASE 03 · AI / ML × FULL STACK · 2026</p>
+      <p class="mono dim">CASE 04 · AI / ML × FULL STACK · 2026</p>
       <h3 class="feat__title">PAC<br>LAB</h3>
       <p class="feat__lede">A virtual ML lab that teaches ten core algorithms through <em>interactive simulations, quizzes and a Pac-Man-style maze.</em></p>
       <dl class="feat__stats">
@@ -300,7 +330,7 @@
 
   <article class="feat" id="f-bloodwing">
     <div class="feat__type">
-      <p class="mono dim">CASE 04 · GEN AI × FULL STACK · 2026</p>
+      <p class="mono dim">CASE 05 · GEN AI × FULL STACK · 2026</p>
       <h3 class="feat__title">BLOOD<br>WING</h3>
       <p class="feat__lede">A mental-health platform with role-based dashboards and an AI companion using <em>retrieval-augmented Llama 3, crisis detection and moderation.</em></p>
       <dl class="feat__stats">

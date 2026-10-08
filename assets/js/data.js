@@ -11,6 +11,8 @@ window.SITE = (() => {
   const projects = [
     { id: 'posture', title: 'PostureVision', line: 'AI workout coach in the browser: counts reps, checks form and talks you through every set.', cat: 'Computer Vision · Web', year: 2026,
       stack: ['React', 'MediaPipe', 'Machine Learning', 'GitHub Actions'], gh: GH + 'PostureVision', live: 'https://aksharaagarwal21.github.io/PostureVision/', img: W + 'posture-d.webp', mob: W + 'posture-m.webp', case: '#f-posture', row: true },
+    { id: 'facemask', title: 'Face Mask Detection', line: 'Real-time 3-class mask compliance from a webcam, video or phone: 98.97% test accuracy.', cat: 'Computer Vision · AI / ML', year: 2026,
+      stack: ['Python', 'TensorFlow', 'OpenCV', 'Flask'], gh: GH + 'Face-mask-detection', img: W + 'facemask-d.webp', mob: W + 'facemask-m.webp', case: '#f-facemask', row: true },
     { id: 'seatsync', title: 'SeatSync', line: 'Ticket booking built on one guarantee: two people can never book the same seat.', cat: 'Full Stack', year: 2026,
       stack: ['Java', 'Spring Boot', 'React', 'PostgreSQL', 'Docker', 'GitHub Actions'], gh: GH + 'SeatSync', img: W + 'seatsync-seat-selection.webp', case: '#f-seatsync', row: true },
     { id: 'paclab', title: 'PAC-LAB', line: 'A gamified virtual ML lab: ten algorithms you learn by playing them.', cat: 'AI / ML · Full Stack', year: 2026,
@@ -21,8 +23,6 @@ window.SITE = (() => {
       stack: ['React', 'FastAPI', 'MongoDB', 'RAG', 'LLMs', 'Vercel'], gh: GH + 'Mental-Health-Care-Web', live: 'https://bloodwing-mentalcare.vercel.app/', img: W + 'bloodwing-d.webp', mob: W + 'bloodwing-m.webp', case: '#f-bloodwing', row: true },
     { id: 'aimatch', title: 'AI Match Maker', line: 'Embedding-based expert matching with LLM jargon translation. Foundathon 2026.', cat: 'Gen AI', year: 2026,
       stack: ['Python', 'FastAPI', 'LangChain', 'LLMs', 'Next.js'], gh: GH + 'ai-match-maker', img: W + 'poster-aimatch.webp', row: true },
-    { id: 'facemask', title: 'Face Mask Detection', line: 'Real-time 3-class mask compliance from image, video or webcam.', cat: 'AI / ML', year: 2026,
-      stack: ['Python', 'TensorFlow', 'OpenCV', 'Flask'], gh: GH + 'Face-mask-detection', img: W + 'poster-facemask.webp', row: true },
     { id: 'deepscholar', title: 'DeepScholar AI', line: 'A research assistant built phase by phase, toward agentic retrieval.', cat: 'Agentic AI · Research', year: 2026,
       stack: ['Python', 'LLMs', 'RAG', 'Agents'], gh: GH + 'DeepScholarAI', img: W + 'poster-deepscholar.webp', row: true },
     { id: 'rfid', title: 'RFID Smart Campus', line: 'Attendance, exams, mess and security running on live RFID scans.', cat: 'Full Stack · IoT', year: 2025,
