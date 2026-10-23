@@ -2,7 +2,7 @@
 
 My personal portfolio website: projects, experience, achievements and ways to reach me.
 
-Built with HTML, CSS and vanilla JavaScript, with GSAP, ScrollTrigger, Lenis and SplitType for the animations. No build step.
+Built with plain HTML, CSS and a little JavaScript. No frameworks, no build step. Supports light and dark mode automatically.
 
 ## Run locally
 
@@ -15,12 +15,11 @@ Then open http://localhost:5173
 ## Structure
 
 ```
-index.html            main portfolio page
+index.html            main portfolio page (all content lives here)
 aurora.html           earlier light version
-assets/css/           styles
-assets/js/data.js     all content (projects, timeline, achievements)
-assets/js/world.js    interactions and animations
-assets/data/          GitHub snapshot
+assets/css/site.css   styles for the main page
+assets/js/site.js     mobile menu, active nav link, fade-in
+assets/docs/          résumés
 assets/w/             images
 ```
 
