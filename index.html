@@ -5,35 +5,89 @@
   <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
   <title>Akshara Kumari — AI/ML &amp; Full-Stack Developer</title>
   <meta name="description" content="Akshara Kumari: Computer Science student at SRM IST building AI systems and full-stack products. Projects, experience and contact details.">
-  <meta name="theme-color" content="#ffffff" media="(prefers-color-scheme: light)">
-  <meta name="theme-color" content="#0b0d12" media="(prefers-color-scheme: dark)">
+  <meta name="theme-color" content="#fafafc" media="(prefers-color-scheme: light)">
+  <meta name="theme-color" content="#06070b" media="(prefers-color-scheme: dark)">
   <meta property="og:title" content="Akshara Kumari — AI/ML &amp; Full-Stack Developer">
   <meta property="og:description" content="AI systems, full-stack products and research. Projects, experience and contact details.">
   <meta property="og:image" content="assets/img/og.jpg">
   <meta name="twitter:card" content="summary_large_image">
-  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Crect width='64' height='64' rx='14' fill='%232f4fdc'/%3E%3Ctext x='50%25' y='50%25' dy='.35em' text-anchor='middle' font-family='Arial' font-weight='700' font-size='26' fill='%23fff'%3EAK%3C/text%3E%3C/svg%3E">
+  <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 64 64'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%234f46e5'/%3E%3Cstop offset='.5' stop-color='%239333ea'/%3E%3Cstop offset='1' stop-color='%230891b2'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='64' height='64' rx='16' fill='url(%23g)'/%3E%3Ctext x='50%25' y='50%25' dy='.35em' text-anchor='middle' font-family='Arial' font-weight='700' font-size='26' fill='%23fff'%3EAK%3C/text%3E%3C/svg%3E">
 
   <link rel="preconnect" href="https://fonts.googleapis.com">
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500;600&family=Space+Grotesk:wght@500;600;700&display=swap" rel="stylesheet">
   <link rel="stylesheet" href="assets/css/site.css">
-  <script>document.documentElement.classList.add('js');</script>
+  <script>
+    (function () {
+      var root = document.documentElement;
+      root.classList.add('js');
+      try {
+        var theme = localStorage.getItem('theme');
+        if (theme === 'light' || theme === 'dark') root.dataset.theme = theme;
+      } catch (e) {}
+    })();
+  </script>
 </head>
 <body>
 
+<!-- icon sprite -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+  <defs>
+    <symbol id="i-arrow" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M5 12h14M13 6l6 6-6 6"/></symbol>
+    <symbol id="i-external" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 17 17 7M8 7h9v9"/></symbol>
+    <symbol id="i-up" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 19V5M6 11l6-6 6 6"/></symbol>
+    <symbol id="i-chevron" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m6 9 6 6 6-6"/></symbol>
+    <symbol id="i-download" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3v12M7 10l5 5 5-5M5 21h14"/></symbol>
+    <symbol id="i-sun" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="4"/><path d="M12 2v2M12 20v2M4.93 4.93l1.41 1.41M17.66 17.66l1.41 1.41M2 12h2M20 12h2M6.34 17.66l-1.41 1.41M19.07 4.93l-1.41 1.41"/></symbol>
+    <symbol id="i-moon" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M21 12.79A9 9 0 1 1 11.21 3 7 7 0 0 0 21 12.79z"/></symbol>
+    <symbol id="i-mail" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="m3 7 9 6 9-6"/></symbol>
+    <symbol id="i-copy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="9" y="9" width="12" height="12" rx="2"/><path d="M5 15V5a2 2 0 0 1 2-2h10"/></symbol>
+    <symbol id="i-pin" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21s-7-6.2-7-11a7 7 0 0 1 14 0c0 4.8-7 11-7 11z"/><circle cx="12" cy="10" r="2.5"/></symbol>
+    <symbol id="i-code" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m8 7-5 5 5 5M16 7l5 5-5 5"/></symbol>
+    <symbol id="i-folder" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M3 7a2 2 0 0 1 2-2h4l2 2h8a2 2 0 0 1 2 2v8a2 2 0 0 1-2 2H5a2 2 0 0 1-2-2z"/></symbol>
+    <symbol id="i-cap" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M22 10 12 5 2 10l10 5 10-5z"/><path d="M6 12v5c3 2 9 2 12 0v-5"/></symbol>
+    <symbol id="i-book" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M4 19.5V5a2 2 0 0 1 2-2h14v16H6.5A2.5 2.5 0 0 0 4 21.5 2.5 2.5 0 0 0 6.5 24"/><path d="M4 19.5A2.5 2.5 0 0 1 6.5 17H20"/></symbol>
+    <symbol id="i-terminal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m4 17 6-5-6-5M12 19h8"/></symbol>
+    <symbol id="i-cpu" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="6" y="6" width="12" height="12" rx="2"/><path d="M10 10h4v4h-4zM9 2v4M15 2v4M9 18v4M15 18v4M2 9h4M2 15h4M18 9h4M18 15h4"/></symbol>
+    <symbol id="i-server" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="7" rx="2"/><rect x="3" y="13" width="18" height="7" rx="2"/><path d="M7 7.5h.01M7 16.5h.01"/></symbol>
+    <symbol id="i-database" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><ellipse cx="12" cy="5" rx="8" ry="3"/><path d="M4 5v14c0 1.66 3.58 3 8 3s8-1.34 8-3V5"/><path d="M4 12c0 1.66 3.58 3 8 3s8-1.34 8-3"/></symbol>
+    <symbol id="i-layers" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 2 10 5-10 5L2 7z"/><path d="m2 17 10 5 10-5"/><path d="m2 12 10 5 10-5"/></symbol>
+    <symbol id="i-users" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="9" cy="8" r="3.5"/><path d="M2.5 20a6.5 6.5 0 0 1 13 0M16 4.5a3.5 3.5 0 0 1 0 7M18 14a6 6 0 0 1 3.5 6"/></symbol>
+    <symbol id="i-briefcase" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="7" width="18" height="13" rx="2"/><path d="M9 7V5a2 2 0 0 1 2-2h2a2 2 0 0 1 2 2v2M3 13h18"/></symbol>
+    <symbol id="i-medal" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="8" r="6"/><path d="M8.5 13.5 7 22l5-3 5 3-1.5-8.5"/></symbol>
+    <symbol id="i-thumb" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M7 10v11M7 10l4-7a2 2 0 0 1 3 2l-1 5h6a2 2 0 0 1 2 2.3l-1.4 7a2 2 0 0 1-2 1.7H4a1 1 0 0 1-1-1v-9a1 1 0 0 1 1-1h3"/></symbol>
+    <symbol id="i-trophy" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M8 21h8M12 17v4M7 4h10v5a5 5 0 0 1-10 0z"/><path d="M17 5h3v2a3 3 0 0 1-3 3M7 5H4v2a3 3 0 0 0 3 3"/></symbol>
+    <symbol id="i-star" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m12 3 2.8 5.7 6.2.9-4.5 4.4 1.1 6.2L12 17.3l-5.6 2.9 1.1-6.2L3 9.6l6.2-.9z"/></symbol>
+    <symbol id="i-target" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><circle cx="12" cy="12" r="9"/><circle cx="12" cy="12" r="5"/><circle cx="12" cy="12" r="1"/></symbol>
+    <symbol id="i-gavel" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="m14 13-7.5 7.5a2.12 2.12 0 0 1-3-3L11 10M16 16l6-6M8 8l6-6M9 7l8 8M21 11l-8-8"/></symbol>
+    <symbol id="i-sparkles" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><path d="M11 3l1.9 5.1L18 10l-5.1 1.9L11 17l-1.9-5.1L4 10l5.1-1.9zM19 15v6M16 18h6"/></symbol>
+    <symbol id="i-certificate" viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round"><rect x="3" y="4" width="18" height="13" rx="2"/><path d="M7 8h10M7 12h6M15 17v4l2-1 2 1v-4"/></symbol>
+    <symbol id="i-github" viewBox="0 0 24 24" fill="currentColor"><path d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></symbol>
+    <symbol id="i-linkedin" viewBox="0 0 24 24" fill="currentColor"><path d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></symbol>
+  </defs>
+</svg>
+
 <a class="skip" href="#main">Skip to content</a>
+<div class="progress" data-progress aria-hidden="true"></div>
 
 <header class="header" data-header>
-  <div class="container header__inner">
-    <a class="brand" href="#top">Akshara Kumari</a>
-    <button class="nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav" data-nav-toggle><span></span><span></span></button>
+  <div class="header__inner">
+    <a class="brand" href="#top" aria-label="Akshara Kumari, back to top"><span class="brand__mark" aria-hidden="true">AK</span><span>Akshara Kumari</span></a>
     <nav class="nav" id="nav" aria-label="Primary" data-nav>
+      <span class="nav__indicator" data-indicator aria-hidden="true"></span>
       <a href="#about">About</a>
       <a href="#experience">Experience</a>
       <a href="#projects">Projects</a>
       <a href="#skills">Skills</a>
       <a href="#contact">Contact</a>
     </nav>
+    <div class="header__actions">
+      <button class="icon-btn theme-toggle" type="button" aria-label="Switch between light and dark theme" data-theme-toggle>
+        <svg class="i i-moon" aria-hidden="true"><use href="#i-moon"/></svg>
+        <svg class="i i-sun" aria-hidden="true"><use href="#i-sun"/></svg>
+      </button>
+      <button class="icon-btn nav-toggle" type="button" aria-label="Menu" aria-expanded="false" aria-controls="nav" data-nav-toggle><span></span><span></span></button>
+    </div>
   </div>
 </header>
 
@@ -41,358 +95,476 @@
 
   <!-- ================= HERO ================= -->
   <section class="hero" id="top">
+    <div class="hero__bg" aria-hidden="true">
+      <div class="hero__grid"></div>
+      <span class="blob blob--1"></span>
+      <span class="blob blob--2"></span>
+      <span class="blob blob--3"></span>
+    </div>
+
     <div class="container hero__inner">
       <div>
-        <h1>Akshara Kumari</h1>
-        <p class="hero__role">AI/ML &amp; Full-Stack Developer</p>
-        <p class="hero__lede">I build AI systems and full-stack products, from LLM-powered automation to booking platforms that hold up under real load. Currently studying Computer Science at SRM IST, Chennai.</p>
-        <div class="hero__actions">
-          <a class="btn btn--primary" href="#projects">View projects</a>
+        <p class="badge intro" style="--d:0"><span class="badge__dot"></span>Available for internships</p>
+        <h1 class="hero__title">
+          <span class="line"><span style="--d:120">Akshara</span></span>
+          <span class="line"><span class="grad-text" style="--d:240">Kumari</span></span>
+        </h1>
+        <p class="hero__role intro" style="--d:420">
+          I build
+          <span class="sr-only">AI systems, full-stack products, LLM workflows and ML research.</span>
+          <span class="rotator" data-rotator aria-hidden="true">
+            <span class="is-active">AI systems.</span>
+            <span>full-stack products.</span>
+            <span>LLM workflows.</span>
+            <span>ML research.</span>
+          </span>
+        </p>
+        <p class="hero__lede intro" style="--d:520">Computer Science student at SRM IST shipping LLM-powered automation, computer vision and full-stack products that hold up under real load.</p>
+        <div class="hero__actions intro" style="--d:620">
+          <a class="btn btn--primary" href="#projects">View projects <svg class="i i-arrow" aria-hidden="true"><use href="#i-arrow"/></svg></a>
           <details class="dropdown" data-resume>
-            <summary class="btn btn--ghost">Download résumé
-              <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m6 9 6 6 6-6"/></svg>
-            </summary>
+            <summary class="btn btn--ghost">Download résumé <svg class="i i-chevron" aria-hidden="true"><use href="#i-chevron"/></svg></summary>
             <div class="dropdown__menu">
-              <a href="assets/docs/Akshara_Kumari_Resume_AIML.pdf" download>AI / ML résumé</a>
-              <a href="assets/docs/Akshara_Kumari_Resume_FullStack.pdf" download>Full-stack résumé</a>
+              <a href="assets/docs/Akshara_Kumari_Resume_AIML.pdf" download><svg class="i" aria-hidden="true"><use href="#i-download"/></svg>AI / ML résumé</a>
+              <a href="assets/docs/Akshara_Kumari_Resume_FullStack.pdf" download><svg class="i" aria-hidden="true"><use href="#i-download"/></svg>Full-stack résumé</a>
             </div>
           </details>
         </div>
+        <ul class="stats intro" style="--d:760">
+          <li class="stat"><b data-count="9.94">9.94</b><span>CGPA</span></li>
+          <li class="stat"><b data-count="3">3</b><span>Internships</span></li>
+          <li class="stat"><b data-count="43">43</b><span>Public repositories</span></li>
+          <li class="stat"><b data-count="5" data-suffix="+">5+</b><span>Client projects shipped</span></li>
+        </ul>
       </div>
-      <img class="hero__photo" src="assets/w/portrait.webp" alt="Portrait of Akshara Kumari" width="1100" height="1100" fetchpriority="high">
+
+      <div class="hero__media" style="--d:300">
+        <div class="portrait">
+          <img src="assets/w/portrait.webp" alt="Portrait of Akshara Kumari" width="1100" height="1100" fetchpriority="high">
+        </div>
+        <p class="hero__loc"><svg class="i" aria-hidden="true"><use href="#i-pin"/></svg>Chennai, India</p>
+      </div>
     </div>
+
+    <a class="scroll-cue" href="#about" aria-label="Scroll to About"></a>
   </section>
 
   <!-- ================= ABOUT ================= -->
   <section class="section" id="about">
-    <div class="container reveal">
-      <h2 class="section__title">About</h2>
-      <div class="split">
-        <div class="prose">
-          <p>I'm a Computer Science undergraduate specialising in <strong>Big Data Analytics</strong>, originally from Jharkhand. My work sits across <strong>machine learning</strong>, <strong>LLM applications</strong> and <strong>full-stack development</strong>, and I'm increasingly drawn to agentic systems, cloud and DevOps.</p>
-          <p>I like research-backed engineering: clear baselines, honest evaluation and results that can be reproduced. Whether it's a forecasting model or a booking API, I want to know it works because I measured it.</p>
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow">01 · About</p>
+        <h2 class="section__title">Curious by default,<br><span class="grad-text">rigorous by habit.</span></h2>
+      </header>
+      <div class="about">
+        <div class="about__text reveal">
+          <p class="lead">I'm a Computer Science undergraduate specialising in Big Data Analytics, originally from Jharkhand, and I like building things I don't yet know how to build.</p>
+          <p>My work sits across <strong>machine learning</strong>, <strong>LLM applications</strong> and <strong>full-stack development</strong>, and I'm increasingly drawn to agentic systems, cloud and DevOps.</p>
+          <p>I prefer research-backed engineering: clear baselines, honest evaluation and results that can be reproduced. Whether it's a forecasting model or a booking API, I want to know it works because I measured it.</p>
         </div>
-        <div>
-          <p class="label">Education</p>
-          <ul class="edu">
-            <li>
-              <h4>SRM Institute of Science and Technology</h4>
-              <p>B.Tech CSE (Big Data Analytics) · CGPA&nbsp;9.94</p>
-              <p class="muted">Chennai · Expected May 2028</p>
-            </li>
-            <li>
-              <h4>Delhi Public School, Ranchi</h4>
+        <ul class="edu">
+          <li class="edu__item panel spot reveal">
+            <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-cap"/></svg></span>
+            <div>
+              <h3>SRM Institute of Science and Technology</h3>
+              <p>B.Tech, Computer Science · Big Data Analytics</p>
+              <span class="chip">Chennai · Expected 2028</span>
+            </div>
+          </li>
+          <li class="edu__item panel spot reveal">
+            <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-book"/></svg></span>
+            <div>
+              <h3>Delhi Public School, Ranchi</h3>
               <p>Class XII, Science · 90.0%</p>
-              <p class="muted">2022 – 2024</p>
-            </li>
-            <li>
-              <h4>DAV Public School, Simdega</h4>
+              <span class="chip">2022 – 2024</span>
+            </div>
+          </li>
+          <li class="edu__item panel spot reveal">
+            <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-book"/></svg></span>
+            <div>
+              <h3>DAV Public School, Simdega</h3>
               <p>Class X · 92.8%</p>
-              <p class="muted">2020 – 2022</p>
-            </li>
-          </ul>
-        </div>
+              <span class="chip">2020 – 2022</span>
+            </div>
+          </li>
+        </ul>
       </div>
     </div>
   </section>
 
   <!-- ================= EXPERIENCE ================= -->
-  <section class="section" id="experience">
-    <div class="container reveal">
-      <h2 class="section__title">Experience</h2>
-      <ol>
-        <li class="job">
-          <p class="job__when"><span>May – Jul 2026</span><span>Kolkata</span></p>
-          <div>
-            <h3>Data Management Intern</h3>
-            <p class="job__org">Saila Shipping &amp; Clearing Agency</p>
-            <ul class="bullets">
+  <section class="section section--soft" id="experience">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow">02 · Experience</p>
+        <h2 class="section__title">Where I've been <span class="grad-text">building.</span></h2>
+      </header>
+
+      <div class="timeline" data-timeline>
+        <span class="timeline__fill" aria-hidden="true"></span>
+
+        <article class="tl-item reveal">
+          <span class="tl-item__dot" aria-hidden="true"></span>
+          <div class="tl-card panel spot">
+            <div class="tl-card__top">
+              <div>
+                <h3>Data Management Intern</h3>
+                <p class="tl-card__org">Saila Shipping &amp; Clearing Agency</p>
+              </div>
+              <span class="chip">May – Jul 2026 · Kolkata</span>
+            </div>
+            <ul class="checks">
               <li>Validated, cleaned and reconciled 15,000+ shipment records, reducing data errors by 30%.</li>
               <li>Prepared 12 weekly analytical reports and worked with 4 teams to resolve 200+ discrepancies.</li>
               <li>Standardised 10+ documentation templates and quality-control checklists.</li>
             </ul>
           </div>
-        </li>
-        <li class="job">
-          <p class="job__when"><span>Feb – Apr 2026</span><span>Chennai</span></p>
-          <div>
-            <h3>AI/ML Team Lead Intern</h3>
-            <p class="job__org">Curious Wings</p>
-            <ul class="bullets">
+        </article>
+
+        <article class="tl-item reveal">
+          <span class="tl-item__dot" aria-hidden="true"></span>
+          <div class="tl-card panel spot">
+            <div class="tl-card__top">
+              <div>
+                <h3>AI/ML Team Lead Intern</h3>
+                <p class="tl-card__org">Curious Wings</p>
+              </div>
+              <span class="chip">Feb – Apr 2026 · Chennai</span>
+            </div>
+            <ul class="checks">
               <li>Led a team of 4 interns to deliver 5+ client AI/ML projects in three months, from scoping to stack selection.</li>
               <li>Ran implementation, troubleshooting and client handoff across 8 client meetings with 100% on-time delivery.</li>
             </ul>
-            <div class="links"><a class="link" href="assets/w/cert-curious-wings-internship.webp" target="_blank" rel="noopener">Internship certificate ↗</a></div>
+            <div class="links"><a class="link" href="assets/w/cert-curious-wings-internship.webp" target="_blank" rel="noopener">Internship certificate <svg class="i" aria-hidden="true"><use href="#i-external"/></svg></a></div>
           </div>
-        </li>
-        <li class="job">
-          <p class="job__when"><span>Oct 2025 – Mar 2026</span><span>Chennai</span></p>
-          <div>
-            <h3>AI/ML Intern</h3>
-            <p class="job__org">BrainMint</p>
-            <ul class="bullets">
+        </article>
+
+        <article class="tl-item reveal">
+          <span class="tl-item__dot" aria-hidden="true"></span>
+          <div class="tl-card panel spot">
+            <div class="tl-card__top">
+              <div>
+                <h3>AI/ML Intern</h3>
+                <p class="tl-card__org">BrainMint</p>
+              </div>
+              <span class="chip">Oct 2025 – Mar 2026 · Chennai</span>
+            </div>
+            <ul class="checks">
               <li>Delivered three automation projects with n8n, Dockerised Ollama, PostgreSQL and API integrations, saving about 10 hours of manual work a week.</li>
               <li>Built end-to-end workflows on 3 locally hosted LLMs (7B–8B), processing 1,000+ test requests at a 95% success rate.</li>
             </ul>
-            <div class="links"><a class="link" href="assets/w/cert-brainmint-internship.webp" target="_blank" rel="noopener">Internship certificate ↗</a></div>
+            <div class="links"><a class="link" href="assets/w/cert-brainmint-internship.webp" target="_blank" rel="noopener">Internship certificate <svg class="i" aria-hidden="true"><use href="#i-external"/></svg></a></div>
           </div>
-        </li>
-      </ol>
+        </article>
+      </div>
 
-      <h3 class="subhead">Leadership</h3>
-      <ol>
-        <li class="job">
-          <p class="job__when"><span>2025 – present</span><span>SRM IST</span></p>
-          <div>
-            <h3>Technical Director</h3>
-            <p class="job__org">GeeksforGeeks Technical Club</p>
-            <ul class="bullets">
-              <li>Lead the technical team through development, reviews, testing and releases of the club website, recruitment workflows, event ticketing and internal tools.</li>
-            </ul>
+      <h3 class="subhead reveal">Leadership</h3>
+      <div class="lead-grid">
+        <article class="mini panel spot reveal">
+          <div class="mini__top">
+            <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-users"/></svg></span>
+            <span class="chip">2025 – present</span>
           </div>
-        </li>
-        <li class="job">
-          <p class="job__when"><span>Oct 2025 – present</span><span>SRM IST</span></p>
-          <div>
-            <h3>Corporate Member</h3>
-            <p class="job__org">PLACFV (Placement Facilitation Volunteers)</p>
-            <ul class="bullets">
-              <li>Coordinate campus placement drives for 100+ students: interview scheduling, candidate flow and on-ground logistics.</li>
-            </ul>
+          <h3>Technical Director</h3>
+          <p class="mini__org">GeeksforGeeks Technical Club, SRM IST</p>
+          <p>Lead the technical team through development, reviews, testing and releases of the club website, recruitment workflows, event ticketing and internal tools.</p>
+        </article>
+        <article class="mini panel spot reveal">
+          <div class="mini__top">
+            <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-briefcase"/></svg></span>
+            <span class="chip">Oct 2025 – present</span>
           </div>
-        </li>
-      </ol>
+          <h3>Corporate Member</h3>
+          <p class="mini__org">PLACFV (Placement Facilitation Volunteers)</p>
+          <p>Coordinate campus placement drives for 100+ students: interview scheduling, candidate flow and on-ground logistics.</p>
+        </article>
+      </div>
     </div>
   </section>
 
   <!-- ================= PROJECTS ================= -->
   <section class="section" id="projects">
-    <div class="container reveal">
-      <h2 class="section__title">Selected projects</h2>
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow">03 · Projects</p>
+        <h2 class="section__title">Things I've <span class="grad-text">shipped.</span></h2>
+      </header>
 
       <div class="features">
         <article class="feature">
-          <a class="feature__media" href="https://aksharaagarwal21.github.io/PostureVision/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-            <img src="assets/w/posture-d.webp" alt="" width="1280" height="800" loading="lazy">
+          <a class="feature__media reveal" href="https://aksharaagarwal21.github.io/PostureVision/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <div class="frame" data-tilt>
+              <div class="frame__bar"><i></i><i></i><i></i><span>aksharaagarwal21.github.io/PostureVision</span></div>
+              <img src="assets/w/posture-d.webp" alt="" width="1280" height="800" loading="lazy">
+            </div>
           </a>
-          <div>
-            <p class="label">Computer vision · Web</p>
+          <div class="reveal">
+            <p class="feature__meta"><span class="feature__num">01</span><span class="label">Computer vision · Web</span></p>
             <h3>PostureVision</h3>
             <p class="feature__desc">An AI workout coach that runs in the browser: it counts reps, checks your form and talks you through every set, and the video never leaves your device.</p>
-            <ul class="bullets">
+            <ul class="checks">
               <li>MediaPipe 3D pose tracking with smoothed joint angles covers 16 exercises across 5 categories.</li>
               <li>Flags form mistakes with red marks on the joint and a voice coach, plus a trainable k-NN per exercise.</li>
               <li>150+ automated tests; installable as a PWA and deployed to GitHub Pages with GitHub Actions.</li>
             </ul>
             <ul class="tags"><li>React</li><li>MediaPipe</li><li>Web Speech API</li><li>Vitest</li><li>GitHub Actions</li></ul>
             <div class="links">
-              <a class="link" href="https://aksharaagarwal21.github.io/PostureVision/" target="_blank" rel="noopener">Live demo ↗</a>
-              <a class="link" href="https://github.com/aksharaagarwal21/PostureVision" target="_blank" rel="noopener">Source code ↗</a>
+              <a class="link" href="https://aksharaagarwal21.github.io/PostureVision/" target="_blank" rel="noopener">Live demo <svg class="i" aria-hidden="true"><use href="#i-external"/></svg></a>
+              <a class="link" href="https://github.com/aksharaagarwal21/PostureVision" target="_blank" rel="noopener">Source code <svg class="i" aria-hidden="true"><use href="#i-external"/></svg></a>
             </div>
           </div>
         </article>
 
         <article class="feature">
-          <a class="feature__media" href="https://github.com/aksharaagarwal21/Face-mask-detection" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-            <img src="assets/w/facemask-d.webp" alt="" width="1280" height="720" loading="lazy">
+          <a class="feature__media reveal" href="https://github.com/aksharaagarwal21/Face-mask-detection" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <div class="frame" data-tilt>
+              <div class="frame__bar"><i></i><i></i><i></i><span>github.com/aksharaagarwal21/Face-mask-detection</span></div>
+              <img src="assets/w/facemask-d.webp" alt="" width="1280" height="720" loading="lazy">
+            </div>
           </a>
-          <div>
-            <p class="label">Computer vision · AI / ML</p>
+          <div class="reveal">
+            <p class="feature__meta"><span class="feature__num">02</span><span class="label">Computer vision · AI / ML</span></p>
             <h3>Face Mask Detection</h3>
             <p class="feature__desc">Real-time detection that sorts every face into with mask, no mask or worn incorrectly, from a webcam, a video or a phone pointed at a crowd.</p>
-            <ul class="bullets">
+            <ul class="checks">
               <li>98.97% test accuracy on 582 held-out faces with an EfficientNetV2-B0 classifier.</li>
               <li>Temperature scaling cut calibration error from 0.067 to 0.010.</li>
               <li>Far-range mode finds 89% of distant faces, up from 73%.</li>
             </ul>
             <ul class="tags"><li>Python</li><li>TensorFlow</li><li>OpenCV</li><li>Flask</li><li>Docker</li></ul>
             <div class="links">
-              <a class="link" href="https://github.com/aksharaagarwal21/Face-mask-detection" target="_blank" rel="noopener">Source code ↗</a>
+              <a class="link" href="https://github.com/aksharaagarwal21/Face-mask-detection" target="_blank" rel="noopener">Source code <svg class="i" aria-hidden="true"><use href="#i-external"/></svg></a>
             </div>
           </div>
         </article>
 
         <article class="feature">
-          <a class="feature__media" href="https://github.com/aksharaagarwal21/SeatSync" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-            <img src="assets/w/seatsync-seat-selection.webp" alt="" width="1280" height="853" loading="lazy">
+          <a class="feature__media reveal" href="https://github.com/aksharaagarwal21/SeatSync" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <div class="frame" data-tilt>
+              <div class="frame__bar"><i></i><i></i><i></i><span>github.com/aksharaagarwal21/SeatSync</span></div>
+              <img src="assets/w/seatsync-seat-selection.webp" alt="" width="1280" height="853" loading="lazy">
+            </div>
           </a>
-          <div>
-            <p class="label">Full stack</p>
+          <div class="reveal">
+            <p class="feature__meta"><span class="feature__num">03</span><span class="label">Full stack</span></p>
             <h3>SeatSync</h3>
             <p class="feature__desc">An event-ticket booking platform built around one guarantee: two people can never book the same seat.</p>
-            <ul class="bullets">
+            <ul class="checks">
               <li>Optimistic and pessimistic locking: 100 concurrent requests for one seat produce exactly one booking.</li>
               <li>12 REST APIs with JWT and role-based access, covered by 35 unit, integration and concurrency tests.</li>
               <li>Load-tested with 500 concurrent users on 10,000 seats: zero double bookings.</li>
             </ul>
             <ul class="tags"><li>Java</li><li>Spring Boot</li><li>PostgreSQL</li><li>React</li><li>TypeScript</li><li>Docker</li></ul>
             <div class="links">
-              <a class="link" href="https://github.com/aksharaagarwal21/SeatSync" target="_blank" rel="noopener">Source code ↗</a>
+              <a class="link" href="https://github.com/aksharaagarwal21/SeatSync" target="_blank" rel="noopener">Source code <svg class="i" aria-hidden="true"><use href="#i-external"/></svg></a>
             </div>
           </div>
         </article>
 
         <article class="feature">
-          <a class="feature__media" href="https://pac-lab-steel.vercel.app/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-            <img src="assets/w/paclab-d.webp" alt="" width="1280" height="800" loading="lazy">
+          <a class="feature__media reveal" href="https://pac-lab-steel.vercel.app/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <div class="frame" data-tilt>
+              <div class="frame__bar"><i></i><i></i><i></i><span>pac-lab-steel.vercel.app</span></div>
+              <img src="assets/w/paclab-d.webp" alt="" width="1280" height="800" loading="lazy">
+            </div>
           </a>
-          <div>
-            <p class="label">AI / ML · Full stack</p>
+          <div class="reveal">
+            <p class="feature__meta"><span class="feature__num">04</span><span class="label">AI / ML · Full stack</span></p>
             <h3>PAC-LAB</h3>
             <p class="feature__desc">A virtual machine-learning lab that teaches ten core algorithms through interactive simulations, quizzes and a Pac-Man-style maze.</p>
-            <ul class="bullets">
+            <ul class="checks">
               <li>Ten experiments, from data preprocessing to the perceptron, with Python running in the browser.</li>
               <li>Student progress tracking and a faculty dashboard on Express and hosted MySQL.</li>
               <li>End-to-end tested with Playwright and deployed on Vercel with a daily health check.</li>
             </ul>
             <ul class="tags"><li>React</li><li>Express</li><li>MySQL</li><li>Playwright</li><li>Vercel</li></ul>
             <div class="links">
-              <a class="link" href="https://pac-lab-steel.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a>
-              <a class="link" href="https://github.com/aksharaagarwal21/Pac-lab---Gamified-Virtual-Machine-Learning" target="_blank" rel="noopener">Source code ↗</a>
+              <a class="link" href="https://pac-lab-steel.vercel.app/" target="_blank" rel="noopener">Live demo <svg class="i" aria-hidden="true"><use href="#i-external"/></svg></a>
+              <a class="link" href="https://github.com/aksharaagarwal21/Pac-lab---Gamified-Virtual-Machine-Learning" target="_blank" rel="noopener">Source code <svg class="i" aria-hidden="true"><use href="#i-external"/></svg></a>
             </div>
           </div>
         </article>
 
         <article class="feature">
-          <a class="feature__media" href="https://bloodwing-mentalcare.vercel.app/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
-            <img src="assets/w/bloodwing-d.webp" alt="" width="1280" height="800" loading="lazy">
+          <a class="feature__media reveal" href="https://bloodwing-mentalcare.vercel.app/" target="_blank" rel="noopener" tabindex="-1" aria-hidden="true">
+            <div class="frame" data-tilt>
+              <div class="frame__bar"><i></i><i></i><i></i><span>bloodwing-mentalcare.vercel.app</span></div>
+              <img src="assets/w/bloodwing-d.webp" alt="" width="1280" height="800" loading="lazy">
+            </div>
           </a>
-          <div>
-            <p class="label">Generative AI · Full stack</p>
+          <div class="reveal">
+            <p class="feature__meta"><span class="feature__num">05</span><span class="label">Generative AI · Full stack</span></p>
             <h3>Bloodwing</h3>
             <p class="feature__desc">A mental-health platform with role-based dashboards and an AI companion for supportive conversations.</p>
-            <ul class="bullets">
+            <ul class="checks">
               <li>Retrieval-augmented companion built on Llama 3 served through Groq.</li>
               <li>Every message passes crisis detection and moderation before a response is generated.</li>
             </ul>
             <ul class="tags"><li>React</li><li>FastAPI</li><li>MongoDB</li><li>RAG</li><li>Llama 3</li></ul>
             <div class="links">
-              <a class="link" href="https://bloodwing-mentalcare.vercel.app/" target="_blank" rel="noopener">Live demo ↗</a>
-              <a class="link" href="https://github.com/aksharaagarwal21/Mental-Health-Care-Web" target="_blank" rel="noopener">Source code ↗</a>
+              <a class="link" href="https://bloodwing-mentalcare.vercel.app/" target="_blank" rel="noopener">Live demo <svg class="i" aria-hidden="true"><use href="#i-external"/></svg></a>
+              <a class="link" href="https://github.com/aksharaagarwal21/Mental-Health-Care-Web" target="_blank" rel="noopener">Source code <svg class="i" aria-hidden="true"><use href="#i-external"/></svg></a>
             </div>
           </div>
         </article>
       </div>
 
-      <h3 class="subhead">More projects</h3>
+      <h3 class="subhead reveal">More projects</h3>
       <div class="cards">
-        <article class="card">
+        <article class="card panel spot reveal">
+          <div class="card__top">
+            <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-folder"/></svg></span>
+            <div class="card__links"><a href="https://github.com/aksharaagarwal21/stockout-aware-demand-forecasting" target="_blank" rel="noopener" aria-label="Stockout-Aware Demand Forecasting source code"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg></a></div>
+          </div>
           <p class="label">Research · Data</p>
           <h4>Stockout-Aware Demand Forecasting</h4>
-          <p>Recovers demand hidden by empty shelves using quantile LightGBM and conformal calibration on 4.5M retail rows, cutting simulated ordering cost by 12–21%.</p>
+          <p class="card__desc">Recovers demand hidden by empty shelves using quantile LightGBM and conformal calibration on 4.5M retail rows, cutting simulated ordering cost by 12–21%.</p>
           <ul class="tags"><li>Python</li><li>LightGBM</li><li>PyTorch</li></ul>
-          <div class="links"><a class="link" href="https://github.com/aksharaagarwal21/stockout-aware-demand-forecasting" target="_blank" rel="noopener">Source code ↗</a></div>
         </article>
-        <article class="card">
+        <article class="card panel spot reveal">
+          <div class="card__top">
+            <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-folder"/></svg></span>
+            <div class="card__links"><a href="https://github.com/aksharaagarwal21/ai-match-maker" target="_blank" rel="noopener" aria-label="AI Match Maker source code"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg></a></div>
+          </div>
           <p class="label">Generative AI</p>
           <h4>AI Match Maker</h4>
-          <p>Matches experts across domains with MiniLM embeddings and cosine similarity, while Gemini and LangChain translate jargon between fields. Built for Foundathon 2026.</p>
+          <p class="card__desc">Matches experts across domains with MiniLM embeddings and cosine similarity, while Gemini and LangChain translate jargon between fields. Built for Foundathon 2026.</p>
           <ul class="tags"><li>FastAPI</li><li>LangChain</li><li>Next.js</li></ul>
-          <div class="links"><a class="link" href="https://github.com/aksharaagarwal21/ai-match-maker" target="_blank" rel="noopener">Source code ↗</a></div>
         </article>
-        <article class="card">
+        <article class="card panel spot reveal">
+          <div class="card__top">
+            <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-folder"/></svg></span>
+            <div class="card__links"><a href="https://github.com/aksharaagarwal21/Smart-Credit-Card-Fraud-Detection" target="_blank" rel="noopener" aria-label="FraudShield AI source code"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg></a></div>
+          </div>
           <p class="label">AI / ML · Data</p>
           <h4>FraudShield AI</h4>
-          <p>Credit-card fraud detection dashboard with a transaction-graph view, fraud alerts and an ML vs GNN model comparison.</p>
+          <p class="card__desc">Credit-card fraud detection dashboard with a transaction-graph view, fraud alerts and an ML vs GNN model comparison.</p>
           <ul class="tags"><li>Machine Learning</li><li>GNN</li></ul>
-          <div class="links"><a class="link" href="https://github.com/aksharaagarwal21/Smart-Credit-Card-Fraud-Detection" target="_blank" rel="noopener">Source code ↗</a></div>
         </article>
-        <article class="card">
+        <article class="card panel spot reveal">
+          <div class="card__top">
+            <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-folder"/></svg></span>
+            <div class="card__links"><a href="https://github.com/aksharaagarwal21/DeepScholarAI" target="_blank" rel="noopener" aria-label="DeepScholar AI source code"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg></a></div>
+          </div>
           <p class="label">Agentic AI</p>
           <h4>DeepScholar AI</h4>
-          <p>A research assistant being built phase by phase, moving from a basic LLM application toward agentic retrieval.</p>
+          <p class="card__desc">A research assistant being built phase by phase, moving from a basic LLM application toward agentic retrieval.</p>
           <ul class="tags"><li>Python</li><li>LLMs</li><li>RAG</li></ul>
-          <div class="links"><a class="link" href="https://github.com/aksharaagarwal21/DeepScholarAI" target="_blank" rel="noopener">Source code ↗</a></div>
         </article>
-        <article class="card">
+        <article class="card panel spot reveal">
+          <div class="card__top">
+            <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-folder"/></svg></span>
+            <div class="card__links"><a href="https://github.com/aksharaagarwal21/wastevision-ai" target="_blank" rel="noopener" aria-label="WasteVision AI source code"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg></a></div>
+          </div>
           <p class="label">Computer vision</p>
           <h4>WasteVision AI</h4>
-          <p>Six-class waste classifier on a MobileNetV2 CNN, with webcam or image input and a live dashboard.</p>
+          <p class="card__desc">Six-class waste classifier on a MobileNetV2 CNN, with webcam or image input and a live dashboard.</p>
           <ul class="tags"><li>TensorFlow</li><li>CNN</li><li>Socket.IO</li></ul>
-          <div class="links"><a class="link" href="https://github.com/aksharaagarwal21/wastevision-ai" target="_blank" rel="noopener">Source code ↗</a></div>
         </article>
-        <article class="card">
+        <article class="card panel spot reveal">
+          <div class="card__top">
+            <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-folder"/></svg></span>
+            <div class="card__links">
+              <a href="https://github.com/aksharaagarwal21/RFIDManagement" target="_blank" rel="noopener" aria-label="RFID Smart Campus source code"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg></a>
+              <a href="https://frontendddd-seven.vercel.app" target="_blank" rel="noopener" aria-label="RFID Smart Campus live demo"><svg class="i" aria-hidden="true"><use href="#i-external"/></svg></a>
+            </div>
+          </div>
           <p class="label">Full stack · IoT</p>
           <h4>RFID Smart Campus</h4>
-          <p>Attendance, exams, mess and campus security running on live RFID scans.</p>
+          <p class="card__desc">Attendance, exams, mess and campus security running on live RFID scans.</p>
           <ul class="tags"><li>React</li><li>Node.js</li><li>MongoDB</li></ul>
-          <div class="links">
-            <a class="link" href="https://frontendddd-seven.vercel.app" target="_blank" rel="noopener">Live demo ↗</a>
-            <a class="link" href="https://github.com/aksharaagarwal21/RFIDManagement" target="_blank" rel="noopener">Source code ↗</a>
-          </div>
         </article>
       </div>
-      <p class="more"><a class="link" href="https://github.com/aksharaagarwal21?tab=repositories" target="_blank" rel="noopener">See all repositories on GitHub ↗</a></p>
+      <p class="more reveal"><a class="btn btn--ghost" href="https://github.com/aksharaagarwal21?tab=repositories" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg>See all repositories</a></p>
     </div>
   </section>
 
   <!-- ================= SKILLS ================= -->
-  <section class="section" id="skills">
-    <div class="container reveal">
-      <h2 class="section__title">Skills</h2>
-      <div>
-        <div class="skill">
+  <section class="section section--soft" id="skills">
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow">04 · Skills</p>
+        <h2 class="section__title">Tools I <span class="grad-text">reach for.</span></h2>
+      </header>
+      <div class="bento">
+        <article class="skill-card skill-card--wide panel spot reveal">
+          <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-cpu"/></svg></span>
+          <h3>AI &amp; machine learning</h3>
+          <ul class="tags"><li>scikit-learn</li><li>TensorFlow / Keras</li><li>PyTorch</li><li>LightGBM</li><li>OpenCV</li><li>MediaPipe</li><li>Sentence Transformers</li><li>LangChain</li><li>LLM APIs</li><li>RAG</li></ul>
+        </article>
+        <article class="skill-card panel spot reveal">
+          <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-terminal"/></svg></span>
           <h3>Languages</h3>
           <ul class="tags"><li>Python</li><li>Java</li><li>SQL</li><li>JavaScript</li><li>TypeScript</li></ul>
-        </div>
-        <div class="skill">
-          <h3>AI &amp; ML</h3>
-          <ul class="tags"><li>scikit-learn</li><li>TensorFlow / Keras</li><li>PyTorch</li><li>LightGBM</li><li>OpenCV</li><li>MediaPipe</li><li>Sentence Transformers</li><li>LangChain</li><li>LLM APIs</li><li>RAG</li></ul>
-        </div>
-        <div class="skill">
+        </article>
+        <article class="skill-card panel spot reveal">
+          <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-server"/></svg></span>
           <h3>Backend &amp; web</h3>
           <ul class="tags"><li>Spring Boot</li><li>FastAPI</li><li>Flask</li><li>Node.js</li><li>Express</li><li>React</li><li>Next.js</li><li>REST APIs</li><li>WebSockets</li><li>Kafka</li></ul>
-        </div>
-        <div class="skill">
+        </article>
+        <article class="skill-card panel spot reveal">
+          <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-database"/></svg></span>
           <h3>Data &amp; DevOps</h3>
           <ul class="tags"><li>PostgreSQL</li><li>MySQL</li><li>MongoDB</li><li>Docker</li><li>GitHub Actions</li><li>AWS</li><li>Vercel</li><li>n8n</li><li>Git</li><li>Maven</li></ul>
-        </div>
-        <div class="skill">
+        </article>
+        <article class="skill-card panel spot reveal">
+          <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-layers"/></svg></span>
           <h3>Foundations</h3>
-          <ul class="tags"><li>Machine Learning</li><li>Deep Learning</li><li>NLP</li><li>Generative AI</li><li>Data Structures &amp; Algorithms</li><li>OOP</li><li>DBMS</li><li>Microservices</li></ul>
-        </div>
+          <ul class="tags"><li>Machine Learning</li><li>Deep Learning</li><li>NLP</li><li>Generative AI</li><li>DSA</li><li>OOP</li><li>DBMS</li><li>Microservices</li></ul>
+        </article>
       </div>
     </div>
   </section>
 
   <!-- ================= ACHIEVEMENTS ================= -->
   <section class="section" id="achievements">
-    <div class="container reveal">
-      <h2 class="section__title">Achievements</h2>
+    <div class="container">
+      <header class="section__head reveal">
+        <p class="eyebrow">05 · Achievements</p>
+        <h2 class="section__title">Recognition <span class="grad-text">along the way.</span></h2>
+      </header>
       <ul class="awards">
-        <li class="award">
+        <li class="award panel spot reveal">
+          <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-medal"/></svg></span>
           <h3>Best Performer of the Month</h3>
-          <p>BrainMint, Chennai · AI/ML internship</p>
-          <a class="link" href="assets/w/cert-brainmint-best-performer.webp" target="_blank" rel="noopener">View certificate ↗</a>
+          <p class="award__detail">BrainMint, Chennai · AI/ML internship</p>
+          <a class="link" href="assets/w/cert-brainmint-best-performer.webp" target="_blank" rel="noopener">View certificate <svg class="i" aria-hidden="true"><use href="#i-external"/></svg></a>
         </li>
-        <li class="award">
+        <li class="award panel spot reveal">
+          <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-thumb"/></svg></span>
           <h3>Client Appreciation Certificate</h3>
-          <p>Curious Wings · for client projects deployed and sold</p>
-          <a class="link" href="assets/w/cert-curious-wings-appreciation.webp" target="_blank" rel="noopener">View certificate ↗</a>
+          <p class="award__detail">Curious Wings · for client projects deployed and sold</p>
+          <a class="link" href="assets/w/cert-curious-wings-appreciation.webp" target="_blank" rel="noopener">View certificate <svg class="i" aria-hidden="true"><use href="#i-external"/></svg></a>
         </li>
-        <li class="award">
+        <li class="award panel spot reveal">
+          <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-trophy"/></svg></span>
           <h3>Top 5 finalist</h3>
-          <p>Tech Mesh Futurix Hackathon</p>
+          <p class="award__detail">Tech Mesh Futurix Hackathon</p>
         </li>
-        <li class="award">
-          <h3>National finalist (top 7 teams)</h3>
-          <p>HACKCELER8 national-level hackathon</p>
+        <li class="award panel spot reveal">
+          <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-star"/></svg></span>
+          <h3>National finalist</h3>
+          <p class="award__detail">HACKCELER8 national-level hackathon · top 7 teams</p>
         </li>
-        <li class="award">
+        <li class="award panel spot reveal">
+          <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-target"/></svg></span>
           <h3>Top 100 teams</h3>
-          <p>Schneider HMI Innovation Marathon</p>
+          <p class="award__detail">Schneider HMI Innovation Marathon</p>
         </li>
-        <li class="award">
+        <li class="award panel spot reveal">
+          <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-gavel"/></svg></span>
           <h3>Hackathon judge</h3>
-          <p>HACKIT Hackathon, SRM IST · AI-enabled applications and backend integration</p>
+          <p class="award__detail">HACKIT Hackathon, SRM IST · AI-enabled apps and backend integration</p>
         </li>
-        <li class="award">
+        <li class="award panel spot reveal">
+          <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-sparkles"/></svg></span>
           <h3>Performance scholarship</h3>
-          <p>₹76,875 awarded by SRM IST for academic performance</p>
+          <p class="award__detail">₹76,875 awarded by SRM IST for academic performance</p>
         </li>
-        <li class="award">
+        <li class="award panel spot reveal">
+          <span class="icon-tile"><svg class="i" aria-hidden="true"><use href="#i-certificate"/></svg></span>
           <h3>NPTEL certifications</h3>
-          <p>Database Management Systems · Advanced Object-Oriented Programming</p>
+          <p class="award__detail">Database Management Systems · Advanced Object-Oriented Programming</p>
         </li>
       </ul>
     </div>
@@ -400,18 +572,25 @@
 
   <!-- ================= CONTACT ================= -->
   <section class="section contact" id="contact">
-    <div class="container contact__inner reveal">
-      <h2>Let's work together</h2>
-      <p>I'm looking for AI/ML and software engineering internships. If you're hiring or have a project in mind, I'd be glad to hear from you.</p>
-      <a class="btn btn--primary" href="mailto:aksharakumari1208@gmail.com">
-        <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="1.8" stroke-linejoin="round" aria-hidden="true"><path d="M3 6h18v12H3z"/><path d="m3 7 9 6 9-6"/></svg>
-        aksharakumari1208@gmail.com
-      </a>
-      <ul class="socials">
-        <li><a href="https://www.linkedin.com/in/akshara-kumari-bb38b535b" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M20.45 20.45h-3.56v-5.57c0-1.33-.03-3.04-1.85-3.04-1.85 0-2.14 1.45-2.14 2.94v5.67H9.35V9h3.41v1.56h.05c.48-.9 1.64-1.85 3.37-1.85 3.6 0 4.27 2.37 4.27 5.46v6.28zM5.34 7.43a2.06 2.06 0 1 1 0-4.13 2.06 2.06 0 0 1 0 4.13zM7.12 20.45H3.56V9h3.56v11.45z"/></svg>LinkedIn</a></li>
-        <li><a href="https://github.com/aksharaagarwal21" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" aria-hidden="true"><path fill="currentColor" d="M12 .5C5.73.5.5 5.73.5 12c0 5.08 3.29 9.39 7.86 10.91.58.1.79-.25.79-.56v-2c-3.2.7-3.87-1.37-3.87-1.37-.52-1.33-1.28-1.69-1.28-1.69-1.04-.71.08-.7.08-.7 1.15.08 1.76 1.18 1.76 1.18 1.03 1.76 2.69 1.25 3.35.96.1-.74.4-1.25.73-1.54-2.55-.29-5.24-1.28-5.24-5.68 0-1.26.45-2.28 1.18-3.09-.12-.29-.51-1.46.11-3.04 0 0 .97-.31 3.17 1.18a11 11 0 0 1 5.77 0c2.2-1.49 3.17-1.18 3.17-1.18.62 1.58.23 2.75.11 3.04.74.81 1.18 1.83 1.18 3.09 0 4.41-2.69 5.39-5.25 5.67.41.36.78 1.06.78 2.14v3.17c0 .31.21.67.8.56A11.5 11.5 0 0 0 23.5 12C23.5 5.73 18.27.5 12 .5z"/></svg>GitHub</a></li>
-        <li><a href="https://leetcode.com/u/Aksharakumari2024/" target="_blank" rel="noopener"><svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2" stroke-linecap="round" stroke-linejoin="round" aria-hidden="true"><path d="m8 7-5 5 5 5"/><path d="m16 7 5 5-5 5"/></svg>LeetCode</a></li>
-      </ul>
+    <div class="container">
+      <div class="contact__card reveal">
+        <div class="contact__bg" aria-hidden="true"></div>
+        <p class="eyebrow">06 · Contact</p>
+        <h2>Let's build <span class="grad-text">something.</span></h2>
+        <p class="contact__text">Have a role, a project or an idea worth exploring? I'd love to hear about it.</p>
+        <div class="contact__actions">
+          <a class="btn btn--primary" href="mailto:aksharakumari1208@gmail.com"><svg class="i" aria-hidden="true"><use href="#i-mail"/></svg>aksharakumari1208@gmail.com</a>
+          <button class="btn btn--ghost copy" type="button" data-copy="aksharakumari1208@gmail.com">
+            <svg class="i" aria-hidden="true"><use href="#i-copy"/></svg>
+            <span class="copy__label">Copy email</span><span class="copy__done">Copied!</span>
+          </button>
+        </div>
+        <ul class="socials">
+          <li><a href="https://www.linkedin.com/in/akshara-kumari-bb38b535b" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-linkedin"/></svg>LinkedIn</a></li>
+          <li><a href="https://github.com/aksharaagarwal21" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-github"/></svg>GitHub</a></li>
+          <li><a href="https://leetcode.com/u/Aksharakumari2024/" target="_blank" rel="noopener"><svg class="i" aria-hidden="true"><use href="#i-code"/></svg>LeetCode</a></li>
+        </ul>
+      </div>
     </div>
   </section>
 
@@ -419,8 +598,8 @@
 
 <footer class="footer">
   <div class="container">
-    <p>© <span data-year>2026</span> Akshara Kumari</p>
-    <a href="#top">Back to top ↑</a>
+    <p>© <span data-year>2026</span> Akshara Kumari · Designed and built by hand</p>
+    <a class="link" href="#top">Back to top <svg class="i" aria-hidden="true"><use href="#i-up"/></svg></a>
   </div>
 </footer>
 
