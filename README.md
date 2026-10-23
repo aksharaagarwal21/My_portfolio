@@ -2,7 +2,11 @@
 
 My personal portfolio website: projects, experience, achievements and ways to reach me.
 
-Built with plain HTML, CSS and a little JavaScript. No frameworks, no build step. Supports light and dark mode automatically.
+Built with plain HTML, CSS and a little JavaScript. No frameworks, no build step.
+
+- Light and dark themes (follows the system setting, with a toggle in the header)
+- Scroll and hover animations: hero intro, rotating headline, count-up stats, timeline fill, card spotlight and screenshot tilt
+- All motion is switched off for visitors who prefer reduced motion
 
 ## Run locally
 
@@ -18,7 +22,7 @@ Then open http://localhost:5173
 index.html            main portfolio page (all content lives here)
 aurora.html           earlier light version
 assets/css/site.css   styles for the main page
-assets/js/site.js     mobile menu, active nav link, fade-in
+assets/js/site.js     theme toggle, navigation, scroll effects, interactions
 assets/docs/          résumés
 assets/w/             images
 ```
